@@ -1,2 +1,7 @@
 # REACT
- teamwork
+
+teamwork
+
+install
+
+- npm i
