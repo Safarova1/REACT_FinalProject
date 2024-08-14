@@ -10,5 +10,11 @@ install
 - npm install @reduxjs/toolkit
 - npm install react-router-dom
 - npm install axios
+
+
 - npm install -D tailwindcss
 - npx tailwindcss init
+
+https://tailwindcss.tw/docs/guides/create-react-app
+- npm install -D tailwindcss postcss autoprefixer
+- npx tailwindcss init -p
