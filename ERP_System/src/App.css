@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 } */
+
+.icon {
+  fill: #000; 
+}
+
+.icon:hover {
+  fill: url(#grad1); 
+}
