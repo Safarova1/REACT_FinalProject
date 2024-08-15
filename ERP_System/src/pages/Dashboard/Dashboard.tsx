@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Sidebar from "../../components/Navbar/Sidebar";
 
 export default class Dashboard extends Component {
   render() {
@@ -8,28 +9,13 @@ export default class Dashboard extends Component {
           <div className="w-[1440px]  flex ">
             {/* Левая панель */}
             <div className="bg-[#FEE2E2] w-[260px] ">
-              <h1 className="text-2xl font-bold">Меню</h1>
-              <ul >
-                <li className="hover:bg-[#F2F7FF] hover:text-blue-600">Dashboard</li>
-                <li className="hover:bg-[#F2F7FF]">Staff</li>
-                <li className="hover:bg-[#F2F7FF]">Payment Voucher</li>
-                <li className="hover:bg-[#F2F7FF]">Payroll</li>
-                <li className="hover:bg-[#F2F7FF]">Memo</li>
-                <li className="hover:bg-[#F2F7FF]">Circulars</li>
-                <li className="hover:bg-[#F2F7FF]">Maintenance</li>
-                <li className="hover:bg-[#F2F7FF]">Logistics</li>
-                <li className="hover:bg-[#F2F7FF]">Office Budget</li>
-                <li className="hover:bg-[#F2F7FF]">Stocks and Inventory</li>
-                <li className="hover:bg-[#F2F7FF]">Notifications</li>
-                <li className="hover:bg-[#F2F7FF]">Capacity Building</li>
-                <li className="hover:bg-[#F2F7FF]">Procurements</li>
-              </ul>
+              <Sidebar />
             </div>
 
             {/* Правая панель */}
             <div className="flex-1 bg-[#F8F9FD] flex flex-col">
               {/* Навбар */}
-              <div className=" h-24 flex justify-between items-center px-6 ">
+              <div className="  flex justify-between items-center px-6 ">
                 <div>
                   <h1 className="text-sm font-bold">Welcome, Mr. Otor John</h1>
                   <p className="text-xs ">
@@ -54,3 +40,57 @@ export default class Dashboard extends Component {
     );
   }
 }
+// import React, { lazy, Suspense } from "react";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Sidebar from "../../components/Navbar/Sidebar";
+// import Staff from "../Staff/Staff";
+// import Sidebar from "./components/Sidebar";
+
+// Лениво загружаемые компоненты
+// const Dashboard = lazy(() => import("./pages/Dashboard/Dashboard"));
+// const Staff = lazy(() => import("./pages/Staff/Staff"));
+// const PaymentVoucher = lazy(() => import("../PaymentVoucher/PaymentVoucher"));
+// const Payroll = lazy(() => import("../Payroll/Payroll"));
+// // const Memo = lazy(() => import("../Memo/Memo"));
+// const Circular = lazy(() => import("../Circular/Circular"));
+// const Maintenance = lazy(() => import("../Maintenance/Maintenance"));
+// const Logistics = lazy(() => import("../Logistics/Logistics"));
+// const OfficeBudget = lazy(() => import("../OfficeBudget/OfficeBudget"));
+// const StocksInventory = lazy(() => import("../StocksInventory/StocksInventory"));
+// const Notifications = lazy(() => import("../Notifications/Notifications"));
+// const CapacityBuilding = lazy(() => import("../CapacityBuilding/CapacityBuilding"));
+// const Procurements = lazy(() => import("../Procurements/Procurements"));
+// const NotFound = lazy(() => import("../NotFound/NotFound"));
+
+// function App() {
+//   return (
+//     <Router>
+//       <div className="flex">
+//         <Sidebar />
+//         <div className="flex-grow p-6">
+//           <Suspense fallback={<div>Loading...</div>}>
+//             <Routes>
+//               {/* <Route path="/" element={<Dashboard />} />
+//               <Route path="/dashboard" element={<Dashboard />} /> */}
+//               <Route path="/staff" element={<Staff />} />
+//               <Route path="/payment-voucher" element={<PaymentVoucher />} />
+//               <Route path="/payroll" element={<Payroll />} />
+//               {/* <Route path="/memo" element={<Memo />} /> */}
+//               <Route path="/circulars" element={<Circular />} />
+//               {/* <Route path="/maintenance" element={<Maintenance />} /> */}
+//               {/* <Route path="/logistics" element={<Logistics />} /> */}
+//               <Route path="/office-budget" element={<OfficeBudget />} />
+//               <Route path="/stocks-and-inventory" element={<StocksInventory />} />
+//               <Route path="/notifications" element={<Notifications />} />
+//               <Route path="/capacity-building" element={<CapacityBuilding />} />
+//               <Route path="/procurements" element={<Procurements />} />
+//               <Route path="*" element={<NotFound />} />
+//             </Routes>
+//           </Suspense>
+//         </div>
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;
