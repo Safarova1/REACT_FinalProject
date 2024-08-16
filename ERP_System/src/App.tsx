@@ -25,7 +25,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
   return (
-    <Router>
+    // <BrowserRouter>
       <div className="flex">
         <div className="flex-grow p-6">
           <Suspense fallback={<div>Loading...</div>}>
@@ -52,7 +52,7 @@ function App() {
           </Suspense>
         </div>
       </div>
-    </Router>
+    // </Router>
   );
 }
 
