@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {UserDropdown} from "../Navbar/UserDropdown.tsx";
+
 
 
 export default class Navbar extends Component {
@@ -13,7 +13,7 @@ export default class Navbar extends Component {
         <div>
           <h1>Otor John</h1>
           <p>HR Office</p>
-          {/* <UserDropdown/> */}
+        
         </div>
       </>
     );
