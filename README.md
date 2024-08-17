@@ -20,3 +20,13 @@ https://tailwindcss.tw/docs/guides/create-react-app
 
 - npm install -D tailwindcss postcss autoprefixer
 - npx tailwindcss init -p
+
+
+- npm install formik
+- npm install yup
+- npm install react-datepicker
+
+- import 'react-datepicker/dist/react-datepicker.css';
+
+
+- npm install chart.js react-chartjs-2
