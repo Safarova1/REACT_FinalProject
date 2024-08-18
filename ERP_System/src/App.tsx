@@ -1,11 +1,12 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
+import { VoucherList } from "./pages/PaymentVoucher/VoucherList";
 
 const Dashboard = lazy(() => import("./pages/Dashboard/Dashboard"));
-
-const PaymentVoucher = lazy(
-  () => import("./pages/PaymentVoucher/PaymentVoucher")
+const PaymentVoucherPage = lazy(
+  () => import("./pages/PaymentVoucher/PaymentVoucherPage")
 );
+
 const OfficeBudget = lazy(() => import("./pages/Budget/OfficeBudget"));
 const Circular = lazy(() => import("./pages/Circular/Circular"));
 const Payroll = lazy(() => import("./pages/Payroll/Payroll"));
@@ -35,11 +36,14 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/staff" element={<StaffList />} />
-
             <Route path="/staff/add-staff" element={<AddStaffList />} />
             <Route path="/staff/edit-staff/:id" element={<EditStaffList />} />
 
-            <Route path="/payment-voucher" element={<PaymentVoucher />} />
+            <Route path="/payment" element={<VoucherList />} />
+            <Route
+              path="/payment/payment-voucher"
+              element={<PaymentVoucherPage />}
+            />
             <Route path="/payroll" element={<Payroll />} />
             <Route path="/office-budget" element={<OfficeBudget />} />
             <Route path="/circular" element={<Circular />} />

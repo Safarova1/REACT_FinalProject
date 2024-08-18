@@ -4,12 +4,16 @@ import App from "./App.tsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import { StaffProvider } from "./pages/Staff/StaffContext.tsx";
+import { Provider } from "react-redux";
+import store from "./redux/store.ts";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
     <React.StrictMode>
       <StaffProvider>
-        <App />
+        <Provider store={store}>
+          <App />
+        </Provider>
       </StaffProvider>
     </React.StrictMode>
   </BrowserRouter>
