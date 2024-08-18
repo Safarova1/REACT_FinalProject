@@ -7,7 +7,7 @@ import Stock from "../Navbar/images_icons/Stock.png";
 import Procurement from "../Navbar/images_icons/Procurement.png";
 import Payroll from "../Navbar/images_icons/Payroll.png";
 import Payment from "../Navbar/images_icons/Payment.png";
-import Notifications from "../Navbar/images_icons/Notifications.png";
+import Notifications from "../Navbar/images_icons/ring.png";
 import Memo from "../Navbar/images_icons/Procurement.png";
 import Maintenance from "../Navbar/images_icons/Maintenance.png";
 import Logistics from "../Navbar/images_icons/Logistics.png";
@@ -40,7 +40,7 @@ const Sidebar = () => {
           <NavItem to="/logistics" label="Logistics" icon={Logistics} />
           <NavItem to="/capacity" label="Capacity" icon={Capacity} />
           <NavItem to="/budget" label="Budget" icon={Budget} />
-          <NavItem to="/circulars" label="Circulars" icon={Circulars} />
+          <NavItem to="/circular" label="Circulars" icon={Circulars} />
 
 
           {/* 
