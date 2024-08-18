@@ -10,6 +10,9 @@ const OfficeBudget = lazy(() => import("./pages/Budget/OfficeBudget"));
 const Circular = lazy(() => import("./pages/Circular/Circular"));
 const Payroll = lazy(() => import("./pages/Payroll/Payroll"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+const StaffList = lazy(() => import("./pages/Staff/StaffList"));
+const AddStaffList = lazy(() => import("./pages/Staff/AddStaffList"));
+const EditStaffList = lazy(() => import("./pages/Staff/EditStaffList"));
 
 // const Memo = lazy(() => import("../Memo/Memo"));
 // const Maintenance = lazy(() => import("../Maintenance/Maintenance"));
@@ -25,14 +28,16 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
   return (
-
     <div className="flex">
       <div className="flex-grow p-6">
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/staff" element={<Staff />} />
+            <Route path="/staff" element={<StaffList />}>
+              <Route path="add-staff" element={<AddStaffList />} />
+              <Route path="edit-staff/:id" element={<EditStaffList />} />
+            </Route>
             <Route path="/payment-voucher" element={<PaymentVoucher />} />
             <Route path="/payroll" element={<Payroll />} />
             <Route path="/office-budget" element={<OfficeBudget />} />
@@ -48,12 +53,10 @@ function App() {
             {/* <Route path="/notifications" element={<Notifications />} /> */}
             {/* <Route path="/capacity-building" element={<CapacityBuilding />} /> */}
             {/* <Route path="/procurements" element={<Procurements />} /> */}
-
           </Routes>
         </Suspense>
       </div>
     </div>
-
   );
 }
 

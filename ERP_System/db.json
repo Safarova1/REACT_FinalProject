@@ -7,7 +7,6 @@
       "Sent To": "Operations Staffs",
       "Date": "16/11/2022",
       "Circular Type": "Sent"
-      
     },
     {
       "id": "2",
@@ -16,7 +15,6 @@
       "Sent To": "HR Staffs",
       "Date": "16/11/2022",
       "Circular Type": "Sent"
-     
     },
     {
       "id": "3",
@@ -25,7 +23,6 @@
       "Sent To": "All Staff",
       "Date": "16/11/2022",
       "Circular Type": "Received"
-    
     },
     {
       "id": "4",
@@ -34,7 +31,625 @@
       "Sent To": "Operations Staffs",
       "Date": "16/11/2022",
       "Circular Type": "Sent"
-     
+    }
+  ],
+  "staff": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "gender": "Male",
+      "staffId": "ID001",
+      "phoneNumber": "123-456-7890",
+      "role": "Manager",
+      "designation": "HR Manager"
+    },
+    {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "gender": "Female",
+      "staffId": "ID002",
+      "phoneNumber": "123-456-7891",
+      "role": "Staff",
+      "designation": "Developer"
+    },
+    {
+      "id": 3,
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "gender": "Female",
+      "staffId": "ID003",
+      "phoneNumber": "123-456-7892",
+      "role": "Staff",
+      "designation": "Designer"
+    },
+    {
+      "id": 4,
+      "firstName": "Bob",
+      "lastName": "Brown",
+      "gender": "Male",
+      "staffId": "ID004",
+      "phoneNumber": "123-456-7893",
+      "role": "Manager",
+      "designation": "Product Manager"
+    },
+    {
+      "id": 5,
+      "firstName": "Charlie",
+      "lastName": "Davis",
+      "gender": "Male",
+      "staffId": "ID005",
+      "phoneNumber": "123-456-7894",
+      "role": "Staff",
+      "designation": "Analyst"
+    },
+    {
+      "id": 6,
+      "firstName": "Emily",
+      "lastName": "Wilson",
+      "gender": "Female",
+      "staffId": "ID006",
+      "phoneNumber": "123-456-7895",
+      "role": "Staff",
+      "designation": "Marketing"
+    },
+    {
+      "id": 7,
+      "firstName": "David",
+      "lastName": "Miller",
+      "gender": "Male",
+      "staffId": "ID007",
+      "phoneNumber": "123-456-7896",
+      "role": "Manager",
+      "designation": "Sales Manager"
+    },
+    {
+      "id": 8,
+      "firstName": "Sophia",
+      "lastName": "Taylor",
+      "gender": "Female",
+      "staffId": "ID008",
+      "phoneNumber": "123-456-7897",
+      "role": "Staff",
+      "designation": "Customer Support"
+    },
+    {
+      "id": 9,
+      "firstName": "James",
+      "lastName": "Anderson",
+      "gender": "Male",
+      "staffId": "ID009",
+      "phoneNumber": "123-456-7898",
+      "role": "Staff",
+      "designation": "IT Specialist"
+    },
+    {
+      "id": 10,
+      "firstName": "Olivia",
+      "lastName": "Thomas",
+      "gender": "Female",
+      "staffId": "ID010",
+      "phoneNumber": "123-456-7899",
+      "role": "Manager",
+      "designation": "Finance Manager"
+    },
+    {
+      "id": 11,
+      "firstName": "Liam",
+      "lastName": "Jackson",
+      "gender": "Male",
+      "staffId": "ID011",
+      "phoneNumber": "123-456-7800",
+      "role": "Staff",
+      "designation": "Content Writer"
+    },
+    {
+      "id": 12,
+      "firstName": "Isabella",
+      "lastName": "White",
+      "gender": "Female",
+      "staffId": "ID012",
+      "phoneNumber": "123-456-7801",
+      "role": "Staff",
+      "designation": "Graphic Designer"
+    },
+    {
+      "id": 13,
+      "firstName": "Ethan",
+      "lastName": "Harris",
+      "gender": "Male",
+      "staffId": "ID013",
+      "phoneNumber": "123-456-7802",
+      "role": "Manager",
+      "designation": "Operations Manager"
+    },
+    {
+      "id": 14,
+      "firstName": "Mia",
+      "lastName": "Martin",
+      "gender": "Female",
+      "staffId": "ID014",
+      "phoneNumber": "123-456-7803",
+      "role": "Staff",
+      "designation": "HR Specialist"
+    },
+    {
+      "id": 15,
+      "firstName": "Jacob",
+      "lastName": "Thompson",
+      "gender": "Male",
+      "staffId": "ID015",
+      "phoneNumber": "123-456-7804",
+      "role": "Staff",
+      "designation": "Data Scientist"
+    },
+    {
+      "id": 16,
+      "firstName": "Ava",
+      "lastName": "Garcia",
+      "gender": "Female",
+      "staffId": "ID016",
+      "phoneNumber": "123-456-7805",
+      "role": "Manager",
+      "designation": "Project Manager"
+    },
+    {
+      "id": 17,
+      "firstName": "Michael",
+      "lastName": "Martinez",
+      "gender": "Male",
+      "staffId": "ID017",
+      "phoneNumber": "123-456-7806",
+      "role": "Staff",
+      "designation": "SEO Specialist"
+    },
+    {
+      "id": 18,
+      "firstName": "Charlotte",
+      "lastName": "Rodriguez",
+      "gender": "Female",
+      "staffId": "ID018",
+      "phoneNumber": "123-456-7807",
+      "role": "Staff",
+      "designation": "Product Designer"
+    },
+    {
+      "id": 19,
+      "firstName": "Benjamin",
+      "lastName": "Lee",
+      "gender": "Male",
+      "staffId": "ID019",
+      "phoneNumber": "123-456-7808",
+      "role": "Manager",
+      "designation": "IT Manager"
+    },
+    {
+      "id": 20,
+      "firstName": "Amelia",
+      "lastName": "Perez",
+      "gender": "Female",
+      "staffId": "ID020",
+      "phoneNumber": "123-456-7809",
+      "role": "Staff",
+      "designation": "Business Analyst"
+    },
+    {
+      "id": 21,
+      "firstName": "Lucas",
+      "lastName": "Clark",
+      "gender": "Male",
+      "staffId": "ID021",
+      "phoneNumber": "123-456-7810",
+      "role": "Staff",
+      "designation": "Software Engineer"
+    },
+    {
+      "id": 22,
+      "firstName": "Aria",
+      "lastName": "Lewis",
+      "gender": "Female",
+      "staffId": "ID022",
+      "phoneNumber": "123-456-7811",
+      "role": "Manager",
+      "designation": "UX Researcher"
+    },
+    {
+      "id": 23,
+      "firstName": "Mason",
+      "lastName": "Walker",
+      "gender": "Male",
+      "staffId": "ID023",
+      "phoneNumber": "123-456-7812",
+      "role": "Staff",
+      "designation": "Web Developer"
+    },
+    {
+      "id": 24,
+      "firstName": "Ella",
+      "lastName": "Hall",
+      "gender": "Female",
+      "staffId": "ID024",
+      "phoneNumber": "123-456-7813",
+      "role": "Manager",
+      "designation": "Business Development Manager"
+    },
+    {
+      "id": 25,
+      "firstName": "Liam",
+      "lastName": "Brown",
+      "gender": "Male",
+      "staffId": "ID025",
+      "phoneNumber": "123-456-7814",
+      "role": "Staff",
+      "designation": "Network Administrator"
+    },
+    {
+      "id": 26,
+      "firstName": "Sophia",
+      "lastName": "Green",
+      "gender": "Female",
+      "staffId": "ID026",
+      "phoneNumber": "123-456-7815",
+      "role": "Staff",
+      "designation": "Network Administrator"
+    },
+    {
+      "id": 27,
+      "firstName": "Noah",
+      "lastName": "White",
+      "gender": "Male",
+      "staffId": "ID027",
+      "phoneNumber": "123-456-7816",
+      "role": "Staff",
+      "designation": "Network Administrator"
+    },
+    {
+      "id": 28,
+      "firstName": "Mia",
+      "lastName": "Black",
+      "gender": "Female",
+      "staffId": "ID028",
+      "phoneNumber": "123-456-7817",
+      "role": "Staff",
+      "designation": "Network Administrator"
+    },
+    {
+      "id": 29,
+      "firstName": "Ethan",
+      "lastName": "Gray",
+      "gender": "Male",
+      "staffId": "ID029",
+      "phoneNumber": "123-456-7818",
+      "role": "Staff",
+      "designation": "Network Administrator"
+    },
+    {
+      "id": 30,
+      "firstName": "Olivia",
+      "lastName": "Smith",
+      "gender": "Female",
+      "staffId": "ID030",
+      "phoneNumber": "123-456-7819",
+      "role": "Staff",
+      "designation": "Network Administrator"
+    },
+    {
+      "id": 31,
+      "firstName": "James",
+      "lastName": "Jones",
+      "gender": "Male",
+      "staffId": "ID031",
+      "phoneNumber": "123-456-7820",
+      "role": "Manager",
+      "designation": "Engineering Manager"
+    },
+    {
+      "id": 32,
+      "firstName": "Ava",
+      "lastName": "Lopez",
+      "gender": "Female",
+      "staffId": "ID032",
+      "phoneNumber": "123-456-7821",
+      "role": "Staff",
+      "designation": "Database Administrator"
+    },
+    {
+      "id": 33,
+      "firstName": "Benjamin",
+      "lastName": "Harris",
+      "gender": "Male",
+      "staffId": "ID033",
+      "phoneNumber": "123-456-7822",
+      "role": "Staff",
+      "designation": "Business Intelligence Analyst"
+    },
+    {
+      "id": 34,
+      "firstName": "Emily",
+      "lastName": "Martin",
+      "gender": "Female",
+      "staffId": "ID034",
+      "phoneNumber": "123-456-7823",
+      "role": "Manager",
+      "designation": "Customer Success Manager"
+    },
+    {
+      "id": 35,
+      "firstName": "Michael",
+      "lastName": "Wilson",
+      "gender": "Male",
+      "staffId": "ID035",
+      "phoneNumber": "123-456-7824",
+      "role": "Staff",
+      "designation": "DevOps Engineer"
+    },
+    {
+      "id": 36,
+      "firstName": "Charlotte",
+      "lastName": "Lee",
+      "gender": "Female",
+      "staffId": "ID036",
+      "phoneNumber": "123-456-7825",
+      "role": "Staff",
+      "designation": "Front-End Developer"
+    },
+    {
+      "id": 37,
+      "firstName": "Ethan",
+      "lastName": "Clark",
+      "gender": "Male",
+      "staffId": "ID037",
+      "phoneNumber": "123-456-7826",
+      "role": "Manager",
+      "designation": "Chief Technology Officer"
+    },
+    {
+      "id": 38,
+      "firstName": "Isabella",
+      "lastName": "Walker",
+      "gender": "Female",
+      "staffId": "ID038",
+      "phoneNumber": "123-456-7827",
+      "role": "Staff",
+      "designation": "Product Marketing Manager"
+    },
+    {
+      "id": 39,
+      "firstName": "Lucas",
+      "lastName": "Young",
+      "gender": "Male",
+      "staffId": "ID039",
+      "phoneNumber": "123-456-7828",
+      "role": "Staff",
+      "designation": "UX Designer"
+    },
+    {
+      "id": 40,
+      "firstName": "Mia",
+      "lastName": "Adams",
+      "gender": "Female",
+      "staffId": "ID040",
+      "phoneNumber": "123-456-7829",
+      "role": "Manager",
+      "designation": "Creative Director"
+    },
+    {
+      "id": 41,
+      "firstName": "Noah",
+      "lastName": "Scott",
+      "gender": "Male",
+      "staffId": "ID041",
+      "phoneNumber": "123-456-7830",
+      "role": "Staff",
+      "designation": "Business Systems Analyst"
+    },
+    {
+      "id": 42,
+      "firstName": "Sophia",
+      "lastName": "Hill",
+      "gender": "Female",
+      "staffId": "ID042",
+      "phoneNumber": "123-456-7831",
+      "role": "Staff",
+      "designation": "IT Support Specialist"
+    },
+    {
+      "id": 43,
+      "firstName": "Aiden",
+      "lastName": "García",
+      "gender": "Male",
+      "staffId": "ID043",
+      "phoneNumber": "123-456-7832",
+      "role": "Manager",
+      "designation": "IT Infrastructure Manager"
+    },
+    {
+      "id": 44,
+      "firstName": "Aria",
+      "lastName": "Nelson",
+      "gender": "Female",
+      "staffId": "ID044",
+      "phoneNumber": "123-456-7833",
+      "role": "Staff",
+      "designation": "Application Developer"
+    },
+    {
+      "id": 45,
+      "firstName": "James",
+      "lastName": "Carter",
+      "gender": "Male",
+      "staffId": "ID045",
+      "phoneNumber": "123-456-7834",
+      "role": "Manager",
+      "designation": "R&D Manager"
+    },
+    {
+      "id": 46,
+      "firstName": "Lily",
+      "lastName": "Baker",
+      "gender": "Female",
+      "staffId": "ID046",
+      "phoneNumber": "123-456-7835",
+      "role": "Staff",
+      "designation": "Software Developer"
+    },
+    {
+      "id": 47,
+      "firstName": "Jackson",
+      "lastName": "Mitchell",
+      "gender": "Male",
+      "staffId": "ID047",
+      "phoneNumber": "123-456-7836",
+      "role": "Staff",
+      "designation": "Technical Lead"
+    },
+    {
+      "id": 48,
+      "firstName": "Ella",
+      "lastName": "Perez",
+      "gender": "Female",
+      "staffId": "ID048",
+      "phoneNumber": "123-456-7837",
+      "role": "Manager",
+      "designation": "Digital Marketing Manager"
+    },
+    {
+      "id": 49,
+      "firstName": "Owen",
+      "lastName": "Martinez",
+      "gender": "Male",
+      "staffId": "ID049",
+      "phoneNumber": "123-456-7838",
+      "role": "Staff",
+      "designation": "Cybersecurity Analyst"
+    },
+    {
+      "id": 50,
+      "firstName": "Mia",
+      "lastName": "Robinson",
+      "gender": "Female",
+      "staffId": "ID050",
+      "phoneNumber": "123-456-7839",
+      "role": "Staff",
+      "designation": "Business Development Executive"
+    }
+  ],
+  "totalVouchers": 250,
+  "vouchers": [
+    {
+      "id": 1,
+      "subject": "Request for FARS for October 2022",
+      "date": "05/12/2022",
+      "preparedBy": "Otor John",
+      "sendTo": "Abubakar Sadiq"
+    },
+    {
+      "id": 2,
+      "subject": "Request for FARS for October 2022",
+      "date": "05/12/2022",
+      "preparedBy": "Otor John",
+      "sendTo": "Abubakar Sadiq"
+    },
+    {
+      "id": 3,
+      "subject": "Request for FARS for October 2022",
+      "date": "05/12/2022",
+      "preparedBy": "Otor John",
+      "sendTo": "Abubakar Sadiq"
+    },
+    {
+      "id": 4,
+      "subject": "Request for FARS for October 2022",
+      "date": "05/12/2022",
+      "preparedBy": "Otor John",
+      "sendTo": "Abubakar Sadiq"
+    },
+    {
+      "id": 5,
+      "subject": "Request for FARS for October 2022",
+      "date": "05/12/2022",
+      "preparedBy": "Otor John",
+      "sendTo": "Abubakar Sadiq"
+    },
+    {
+      "id": 6,
+      "subject": "Request for FARS for October 2022",
+      "date": "05/12/2022",
+      "preparedBy": "Otor John",
+      "sendTo": "Abubakar Sadiq"
+    },
+    {
+      "id": 7,
+      "subject": "Request for FARS for October 2022",
+      "date": "05/12/2022",
+      "preparedBy": "Otor John",
+      "sendTo": "Abubakar Sadiq"
+    },
+    {
+      "id": 8,
+      "subject": "Request for FARS for October 2022",
+      "date": "05/12/2022",
+      "preparedBy": "Otor John",
+      "sendTo": "Abubakar Sadiq"
+    },
+    {
+      "id": 9,
+      "subject": "Request for FARS for October 2022",
+      "date": "05/12/2022",
+      "preparedBy": "Otor John",
+      "sendTo": "Abubakar Sadiq"
+    },
+    {
+      "id": 10,
+      "subject": "Request for FARS for October 2022",
+      "date": "05/12/2022",
+      "preparedBy": "Otor John",
+      "sendTo": "Abubakar Sadiq"
+    },
+    {
+      "id": 11,
+      "subject": "Request for FARS for October 2022",
+      "date": "05/12/2022",
+      "preparedBy": "Otor John",
+      "sendTo": "Abubakar Sadiq"
+    },
+    {
+      "id": 12,
+      "subject": "Request for FARS for October 2022",
+      "date": "05/12/2022",
+      "preparedBy": "Otor John",
+      "sendTo": "Abubakar Sadiq"
+    }
+  ],
+  "paymentVoucherData": [
+    {
+      "id": 1,
+      "class": "Consultancy service",
+      "description": "FARS",
+      "quantity": 1,
+      "unitPrice": 1000000,
+      "amount": 1000000,
+      "vatPercentage": 7.5,
+      "vatAmount": 75000,
+      "grossAmount": 1075000,
+      "whtPercentage": 2.5,
+      "whtAmount": 25000,
+      "netAmount": 1050000
+    },
+    {
+      "id": 2,
+      "class": "Consultancy service",
+      "description": "Tax Service",
+      "quantity": 1,
+      "unitPrice": 500000,
+      "amount": 500000,
+      "vatPercentage": 7.5,
+      "vatAmount": 37500,
+      "grossAmount": 537500,
+      "whtPercentage": 10,
+      "whtAmount": 50000,
+      "netAmount": 487500
     }
   ]
 }
