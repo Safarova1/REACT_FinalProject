@@ -978,5 +978,47 @@
       "deductions": 875,
       "netSalary": 916635
     }
+  ],
+  "salaries": [
+    {
+      "id": 1723991548572,
+      "title": "Manager",
+      "level": "GM",
+      "basicSalary": 5000,
+      "allowance": 2000,
+      "deductions": 3000,
+      "grossSalary": 7000,
+      "netSalary": 4000
+    },
+    {
+      "id": 1723992000951,
+      "title": "Product Manager",
+      "level": "DGM",
+      "basicSalary": 7000,
+      "allowance": 3000,
+      "deductions": 2000,
+      "grossSalary": 10000,
+      "netSalary": 8000
+    },
+    {
+      "id": 1723993654635,
+      "title": "Eingineer",
+      "level": "LD",
+      "basicSalary": 5000,
+      "allowance": 2000,
+      "deductions": 100,
+      "grossSalary": 7000,
+      "netSalary": 6900
+    },
+    {
+      "id": 1724009105865,
+      "title": "scsc",
+      "level": "cdcdc",
+      "basicSalary": 4,
+      "allowance": 5,
+      "deductions": 4,
+      "grossSalary": 9,
+      "netSalary": 5
+    }
   ]
 }

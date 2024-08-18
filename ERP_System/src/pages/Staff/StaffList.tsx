@@ -104,7 +104,7 @@ const StaffList = () => {
             {/* Основной контент */}
             <div className="flex-1 p-8 items-center justify-center py-[26px] px-4 relative">
               <div className="w-[1112px] mx-auto mt-8">
-                <div className="mx-auto container p-6 bg-white mt-20">
+                <div className="mx-auto container p-6 bg-white ">
                   {location.pathname === "/staff" && (
                     <div className="bg-white p-6 mb-6 rounded-lg shadow-md">
                       <div className="flex justify-between items-center mb-4">
@@ -197,11 +197,10 @@ const StaffList = () => {
                         {getPageNumbers().map((number) => (
                           <button
                             key={number}
-                            className={`p-2 border rounded-md ${
-                              currentPage === number
+                            className={`p-2 border rounded-md ${currentPage === number
                                 ? "bg-blue-600 text-white"
                                 : "border-gray-300"
-                            }`}
+                              }`}
                             onClick={() => handlePageChange(number)}
                           >
                             {number}

@@ -9,10 +9,10 @@ import BudgetHistory from "./BudgetHistory";
 
 const MainOfficeBudget = () => {
   return (
-    <section className="bg-backgroundColor max-w-[1132px]">
+    <>
       <div>
         <div className="flex items-center justify-center gap-5">
-          {/*  */}
+
           <div className="flex items-center justify-center rounded-[20px] bg-white pt-[24px] pr-[20px] pb-[25px] pl-[20px]">
             <div className="mr-[30px]">
               <p className="text-2xl font-extrabold mr-2">₦23,000,000</p>
@@ -88,7 +88,7 @@ const MainOfficeBudget = () => {
       </div>
       <CreateBudget />
       <BudgetHistory />
-    </section>
+    </>
   );
 };
 
