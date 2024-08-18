@@ -33,7 +33,6 @@
       "Circular Type": "Sent"
     }
   ],
-
   "staff": [
     {
       "id": 1,
@@ -653,7 +652,6 @@
       "netAmount": 487500
     }
   ],
-
   "budgetHistory": [
     {
       "id": "1",
@@ -724,7 +722,261 @@
       "ActualAmount": "1,380,000.00",
       "Variance": "20,000.00",
       "Date": "18/11/2023"
-
+    }
+  ],
+  "tax": [
+    {
+      "id": 1723988254951,
+      "type": "МФТ",
+      "value": 50
+    },
+    {
+      "id": 1723988299755,
+      "type": "WHT",
+      "value": 2.5
+    },
+    {
+      "id": 1723988322237,
+      "type": "NHIS",
+      "value": 13
+    },
+    {
+      "id": 1723988332318,
+      "type": "VAT",
+      "value": 7
+    }
+  ],
+  "payslips": [
+    {
+      "id": 1723987913424,
+      "staffName": "Iman",
+      "title": "DEV",
+      "level": "Senior",
+      "basicSalary": 5000,
+      "allowance": 700,
+      "grossSalary": 5700,
+      "deductions": 200,
+      "netSalary": 5500
+    },
+    {
+      "id": 1723987927130,
+      "staffName": "Iman",
+      "title": "DEV",
+      "level": "Senior",
+      "basicSalary": 5000,
+      "allowance": 700,
+      "grossSalary": 5700,
+      "deductions": 200,
+      "netSalary": 5500
+    },
+    {
+      "id": 1723987929362,
+      "staffName": "Iman",
+      "title": "DEV",
+      "level": "Senior",
+      "basicSalary": 5000,
+      "allowance": 700,
+      "grossSalary": 5700,
+      "deductions": 200,
+      "netSalary": 5500
+    },
+    {
+      "id": 1723987931738,
+      "staffName": "Iman",
+      "title": "DEV",
+      "level": "Senior",
+      "basicSalary": 5000,
+      "allowance": 700,
+      "grossSalary": 5700,
+      "deductions": 200,
+      "netSalary": 5500
+    },
+    {
+      "id": 1723987934136,
+      "staffName": "Iman",
+      "title": "DEV",
+      "level": "Senior",
+      "basicSalary": 5000,
+      "allowance": 700,
+      "grossSalary": 5700,
+      "deductions": 200,
+      "netSalary": 5500
+    },
+    {
+      "id": 1723987972525,
+      "staffName": "ssss",
+      "title": "ssss",
+      "level": "ssss",
+      "basicSalary": 555,
+      "allowance": 5555,
+      "grossSalary": 6110,
+      "deductions": 555,
+      "netSalary": 5555
+    },
+    {
+      "id": 1723987974496,
+      "staffName": "ssss",
+      "title": "ssss",
+      "level": "ssss",
+      "basicSalary": 555,
+      "allowance": 5555,
+      "grossSalary": 6110,
+      "deductions": 555,
+      "netSalary": 5555
+    },
+    {
+      "id": 1723988079316,
+      "staffName": "ssss",
+      "title": "ssss",
+      "level": "ssss",
+      "basicSalary": 555,
+      "allowance": 5555,
+      "grossSalary": 6110,
+      "deductions": 555,
+      "netSalary": 5555
+    },
+    {
+      "id": 1723988203569,
+      "staffName": "Iman",
+      "title": "eee",
+      "level": "eee",
+      "basicSalary": 85,
+      "allowance": 500,
+      "grossSalary": 585,
+      "deductions": 500,
+      "netSalary": 85
+    },
+    {
+      "id": 1723988493183,
+      "staffName": "Iman",
+      "title": "Developer",
+      "level": "Junior",
+      "basicSalary": 1500,
+      "allowance": 200,
+      "grossSalary": 1700,
+      "deductions": 50,
+      "netSalary": 1650
+    },
+    {
+      "id": 1723989718418,
+      "staffName": "Abubakr",
+      "title": "Developer",
+      "level": "Senior",
+      "basicSalary": 7000,
+      "allowance": 2000,
+      "grossSalary": 9000,
+      "deductions": 1000,
+      "netSalary": 8000
+    },
+    {
+      "id": 1723989760436,
+      "staffName": "Iman",
+      "title": "Developer",
+      "level": "Senior",
+      "basicSalary": 7000,
+      "allowance": 1000,
+      "grossSalary": 8000,
+      "deductions": 500,
+      "netSalary": 7500
+    },
+    {
+      "id": 1723989923078,
+      "staffName": "cdcdwcwe",
+      "title": "wecewcwe",
+      "level": "wec282",
+      "basicSalary": 85252,
+      "allowance": 28528282,
+      "grossSalary": 28613534,
+      "deductions": 8528,
+      "netSalary": 28605006
+    },
+    {
+      "id": 1723990276480,
+      "staffName": "Iman",
+      "title": "Developer",
+      "level": "Senior",
+      "basicSalary": 5000,
+      "allowance": 2000,
+      "grossSalary": 7000,
+      "deductions": 50,
+      "netSalary": 6950
+    },
+    {
+      "id": 1723991606878,
+      "staffName": "Iman",
+      "title": "Manager",
+      "level": "Middle",
+      "basicSalary": 4000,
+      "allowance": 2000,
+      "grossSalary": 6000,
+      "deductions": 1000,
+      "netSalary": 5000
+    },
+    {
+      "id": 1723992718694,
+      "staffName": "Anthony",
+      "title": "Eingineer",
+      "level": "Middle",
+      "basicSalary": 3000,
+      "allowance": 2000,
+      "grossSalary": 5000,
+      "deductions": 1000,
+      "netSalary": 4000
+    },
+    {
+      "id": 1723992807661,
+      "staffName": "Michael",
+      "title": "HR",
+      "level": "Junior",
+      "basicSalary": 2000,
+      "allowance": 1000,
+      "grossSalary": 3000,
+      "deductions": 500,
+      "netSalary": 2500
+    },
+    {
+      "id": 1723992888683,
+      "staffName": "Ashly",
+      "title": "VD",
+      "level": "Senior",
+      "basicSalary": 7000,
+      "allowance": 3000,
+      "grossSalary": 10000,
+      "deductions": 500,
+      "netSalary": 9500
+    },
+    {
+      "id": 1723992931917,
+      "staffName": "Iman",
+      "title": "ddvdsvd",
+      "level": "vsdvdsv",
+      "basicSalary": 525285,
+      "allowance": 525252,
+      "grossSalary": 1050537,
+      "deductions": 2852,
+      "netSalary": 1047685
+    },
+    {
+      "id": 1723993056404,
+      "staffName": "Ashly",
+      "title": "sddfefef",
+      "level": "efewfew",
+      "basicSalary": 7000,
+      "allowance": 5000,
+      "grossSalary": 12000,
+      "deductions": 500,
+      "netSalary": 11500
+    },
+    {
+      "id": 1723994890781,
+      "staffName": "вцвцв",
+      "title": "цвцвцв",
+      "level": "вцвц",
+      "basicSalary": 858752,
+      "allowance": 58758,
+      "grossSalary": 917510,
+      "deductions": 875,
+      "netSalary": 916635
     }
   ]
 }

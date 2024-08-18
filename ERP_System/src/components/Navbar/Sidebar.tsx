@@ -32,7 +32,7 @@ const Sidebar = () => {
           <NavItem to="/staff" label="Staff" icon={Staff} />
           <NavItem to="/stock" label="Stock" icon={Stock} />
           <NavItem to="/procurement" label="Procurement" icon={Procurement} />
-          <NavItem to="/payroll" label="Payroll" icon={Payroll} />
+          <NavItem to="/salary-breakdown" label="Payroll" icon={Payroll} />
           <NavItem to="/payment" label="Payment" icon={Payment} />
           <NavItem
             to="/notifications"

@@ -1,3 +1,4 @@
+import "./App.css";
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { VoucherList } from "./pages/PaymentVoucher/VoucherList";
@@ -9,7 +10,21 @@ const PaymentVoucherPage = lazy(
 
 const OfficeBudget = lazy(() => import("./pages/Budget/OfficeBudget"));
 const Circular = lazy(() => import("./pages/Circular/Circular"));
+
+
+
+const SalaryBreakdown = lazy(() => import("./pages/Payroll/SalaryBreakdown"));
+const CreateSalaryDefinition = lazy(() => import("./pages/Payroll/CreateSalaryDefinition"));
+const EditSalaryDefinition = lazy(() => import("./pages/Payroll/EditSalaryDefinition"));
+const DeleteSalaryDefinition = lazy(() => import("./pages/Payroll/DeleteSalaryDefinition"));
+const CreateTaxDefinition = lazy(() => import("./pages/Payroll/CreateTaxDefinition"));
+const Tax = lazy(() => import("./pages/Payroll/Tax"));
 const Payroll = lazy(() => import("./pages/Payroll/Payroll"));
+const Payslips = lazy(() => import("./pages/Payroll/Payslips"));
+const CreatePayslip = lazy(() => import("./pages/Payroll/CreatePayslip"));
+
+
+
 const SignInPage = lazy(() => import("./pages/Authentication/SignInPage"));
 const SignUpPage = lazy(() => import("./pages/Authentication/SignUpPage"));
 const CreateBudgetSection = lazy(
@@ -50,11 +65,24 @@ function App() {
               path="/payment/payment-voucher"
               element={<PaymentVoucherPage />}
             />
+
+            <Route path="/salary-breakdown" element={<SalaryBreakdown />} />
+            <Route path="/create-salary" element={<CreateSalaryDefinition />} />
+            <Route path="/edit-salary/:id" element={<EditSalaryDefinition />} />
+            <Route path="/delete-salary/:id" element={<DeleteSalaryDefinition />} />
+            <Route path="/create-tax" element={<CreateTaxDefinition />} />
+            <Route path="/tax" element={<Tax />} />
+            <Route path="/payslips" element={<Payslips />} />
             <Route path="/payroll" element={<Payroll />} />
+            <Route path="/create-payslip" element={<CreatePayslip />} />
+
+
+
             <Route path="/budget" element={<OfficeBudget />} />
             <Route path="/createBudget" element={<CreateBudgetSection />} />
             <Route path="/circular" element={<Circular />} />
             <Route path="*" element={<NotFound />} />
+
             {/* <Route path="/memo" element={<Memo />} /> */}
             {/* <Route path="/maintenance" element={<Maintenance />} /> */}
             {/* <Route path="/logistics" element={<Logistics />} /> */}
