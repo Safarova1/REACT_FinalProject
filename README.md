@@ -11,6 +11,7 @@ install
 - npm install react-router-dom
 - npm install axios
 - npm i json-serve
+- npm run serve-json
 
 - npm install -D tailwindcss
 - npx tailwindcss init
@@ -20,13 +21,10 @@ https://tailwindcss.tw/docs/guides/create-react-app
 
 - npm install -D tailwindcss postcss autoprefixer
 - npx tailwindcss init -p
-
-
 - npm install formik
 - npm install yup
 - npm install react-datepicker
-
 - import 'react-datepicker/dist/react-datepicker.css';
-
-
 - npm install chart.js react-chartjs-2
+
+
