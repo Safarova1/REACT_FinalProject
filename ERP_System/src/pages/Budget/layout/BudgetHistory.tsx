@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { RootState, AppDispatch } from "../../../components/store/store";
-import { fetchBudgetInfo } from "../../../components/store/operations";
+import { RootState, AppDispatch } from "../../../redux/store";
+import { fetchBudgetInfo } from "../../../redux/slices/operation";
 
 const BudgetHistory: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();

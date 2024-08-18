@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { login } from "../operations";
-import { IError } from "../../types/infoAuthTypes";
+import { login } from "./operation";
+import { IError } from "../../components/types/infoAuthTypes";
 
 export interface IAuthState {
   id: number | null;

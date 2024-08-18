@@ -6,7 +6,7 @@ import CommonButton from "../../../components/Button/Button";
 import { IBudgetInfo } from "../../../components/types/budgetInfoTypes";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { addBudgetItem } from "../../../components/store/operations";
+import { addBudgetItem } from "../../../redux/slices/operation";
 
 import Navbar from "../../../components/Navbar/Navbar";
 import Sidebar from "../../../components/Navbar/Sidebar";

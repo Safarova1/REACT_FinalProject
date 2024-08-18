@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchBudgetInfo, addBudgetItem } from "../operations";
+import { fetchBudgetInfo, addBudgetItem } from "./operation";
 
 export interface BudgetItem {
   id: number;

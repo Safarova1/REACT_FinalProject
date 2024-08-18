@@ -1,7 +1,7 @@
 import React, { useId } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { login } from "../../components/store/operations";
-import { AppDispatch, RootStat } from "../../components/store/store.ts";
+import { login } from "../../redux/slices/operation.ts";
+import { AppDispatch, RootStat } from "../../redux/store.ts";
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import imgLogo from "../../assets/images/logo-img.png";
 import imgDepos from "../../assets/images/auth-img.png";

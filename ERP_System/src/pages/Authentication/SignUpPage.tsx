@@ -1,13 +1,13 @@
 import React, { useId } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootStat } from "../../components/store/store.ts";
+import { AppDispatch, RootStat } from "../../redux/store.ts";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import imgLogo from "../../assets/images/logo-img.png";
 import { ISignUp } from "../../components/types/infoAuthTypes.ts";
 import CommonButton from "../../components/Button/Button.tsx";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
-import { login } from "../../components/store/operations.ts";
+import { login } from "../../redux/slices/operation.ts";
 
 const SignUpScheme = Yup.object().shape({
   email: Yup.string().email("Must be a valid email").required("Required"),
