@@ -1,9 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [],
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "custom-blue-start": "#14ADD6",
+        "custom-blue-end": "#384295",
+      },
+      backgroundImage: {
+        // Пример кастомного градиента
+        "gradient-custom": "linear-gradient(to right, #14ADD6, #384295)",
+      },
+    },
   },
   plugins: [],
-}
-
+};

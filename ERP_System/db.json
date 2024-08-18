@@ -1,0 +1,40 @@
+{
+  "circular": [
+    {
+      "id": "1",
+      "Circular Title": "HR Circular for Operations Department Staff",
+      "Sent From": "Admin, HR",
+      "Sent To": "Operations Staffs",
+      "Date": "16/11/2022",
+      "Circular Type": "Sent"
+      
+    },
+    {
+      "id": "2",
+      "Circular Title": "Management Circular for HR Staffs",
+      "Sent From": "Admin, HR",
+      "Sent To": "HR Staffs",
+      "Date": "16/11/2022",
+      "Circular Type": "Sent"
+     
+    },
+    {
+      "id": "3",
+      "Circular Title": "Circular for Time Maintainance in the Office",
+      "Sent From": "Management",
+      "Sent To": "All Staff",
+      "Date": "16/11/2022",
+      "Circular Type": "Received"
+    
+    },
+    {
+      "id": "4",
+      "Circular Title": "HR Circular for Operations Department Staff",
+      "Sent From": "Admin, HR",
+      "Sent To": "Operations Staffs",
+      "Date": "16/11/2022",
+      "Circular Type": "Sent"
+     
+    }
+  ]
+}
