@@ -24,8 +24,6 @@ export const addVoucher = createAsyncThunk<Voucher, Voucher>(
   }
 );
 
-axios.defaults.baseURL = "http://localhost:3000";
-
 export const login = createAsyncThunk(
   "auth/login",
   async (
@@ -76,7 +74,7 @@ export const fetchBudgetInfo = createAsyncThunk(
   "budget/fetchBudgetInfo",
   async (_, thunkApi) => {
     try {
-      const response = await axios.get("/budgetHistory");
+      const response = await axios.get("http://localhost:3000/budgetHistory");
       return response.data;
     } catch (error) {
       if (axios.isAxiosError(error)) {
@@ -92,7 +90,10 @@ export const addBudgetItem = createAsyncThunk(
   "budget/addBudgetItem",
   async (newItem: IBudgetInfo, thunkApi) => {
     try {
-      const response = await axios.post("/budgetHistory", newItem);
+      const response = await axios.post(
+        "http://localhost:3000/budgetHistory",
+        newItem
+      );
       return response.data;
     } catch (error) {
       if (axios.isAxiosError(error)) {
