@@ -1,36 +1,134 @@
 {
-  "circular": [
+  "circulars": [
     {
-      "id": "1",
-      "Circular Title": "HR Circular for Operations Department Staff",
-      "Sent From": "Admin, HR",
-      "Sent To": "Operations Staffs",
-      "Date": "16/11/2022",
-      "Circular Type": "Sent"
+      "id": "01",
+      "title": "HR Circular for Operations Department Staff",
+      "sender": "Admin, HR",
+      "recipients": "Operations Staffs",
+      "date": "16/11/2022",
+      "status": "Sent",
+      "viewCount": 7,
+      "action": "View more"
     },
     {
-      "id": "2",
-      "Circular Title": "Management Circular for HR Staffs",
-      "Sent From": "Admin, HR",
-      "Sent To": "HR Staffs",
-      "Date": "16/11/2022",
-      "Circular Type": "Sent"
+      "id": "02",
+      "title": "Management Circular for HR Staffs",
+      "sender": "Admin, HR",
+      "recipients": "HR Staffs",
+      "date": "16/11/2022",
+      "status": "Sent",
+      "viewCount": 7,
+      "action": "View more"
     },
     {
-      "id": "3",
-      "Circular Title": "Circular for Time Maintainance in the Office",
-      "Sent From": "Management",
-      "Sent To": "All Staff",
-      "Date": "16/11/2022",
-      "Circular Type": "Received"
+      "id": "03",
+      "title": "Circular for Time Maintainance in the Office",
+      "sender": "Management",
+      "recipients": "All Staff",
+      "date": "16/11/2022",
+      "status": "Received",
+      "viewCount": null,
+      "action": "View more"
     },
     {
-      "id": "4",
-      "Circular Title": "HR Circular for Operations Department Staff",
-      "Sent From": "Admin, HR",
-      "Sent To": "Operations Staffs",
-      "Date": "16/11/2022",
-      "Circular Type": "Sent"
+      "id": "04",
+      "title": "HR Circular for Operations Department Staff",
+      "sender": "Admin, HR",
+      "recipients": "Operations Staffs",
+      "date": "16/11/2022",
+      "status": "Sent",
+      "viewCount": 7,
+      "action": "View more"
+    },
+    {
+      "id": "05",
+      "title": "HR Circular for Operations Department Staff",
+      "sender": "Admin, HR",
+      "recipients": "Operations Staffs",
+      "date": "16/11/2022",
+      "status": "Received",
+      "viewCount": null,
+      "action": "View more"
+    },
+    {
+      "id": "06",
+      "title": "HR Circular for Operations Department Staff",
+      "sender": "Admin, HR",
+      "recipients": "Operations Staffs",
+      "date": "16/11/2022",
+      "status": "Sent",
+      "viewCount": 7,
+      "action": "View more"
+    },
+    {
+      "id": "07",
+      "title": "HR Circular for Operations Department Staff",
+      "sender": "Admin, HR",
+      "recipients": "Operations Staffs",
+      "date": "16/11/2022",
+      "status": "Sent",
+      "viewCount": 7,
+      "action": "View more"
+    },
+    {
+      "id": "08",
+      "title": "HR Circular for Operations Department Staff",
+      "sender": "Admin, HR",
+      "recipients": "Operations Staffs",
+      "date": "16/11/2022",
+      "status": "Received",
+      "viewCount": null,
+      "action": "View more"
+    },
+    {
+      "id": "09",
+      "title": "HR Circular for Operations Department Staff",
+      "sender": "Admin, HR",
+      "recipients": "Operations Staffs",
+      "date": "16/11/2022",
+      "status": "Received",
+      "viewCount": null,
+      "action": "View more"
+    },
+    {
+      "id": "10",
+      "title": "HR Circular for Operations Department Staff",
+      "sender": "Admin, HR",
+      "recipients": "Operations Staffs",
+      "date": "16/11/2022",
+      "status": "Sent",
+      "viewCount": 7,
+      "action": "View more"
+    },
+    {
+      "id": "11",
+      "title": "HR Circular for Operations Department Staff",
+      "sender": "Admin, HR",
+      "recipients": "Operations Staffs",
+      "date": "16/11/2022",
+      "status": "Sent",
+      "viewCount": 7,
+      "action": "View more"
+    },
+    {
+      "id": "12",
+      "title": "HR Circular for Operations Department Staff",
+      "sender": "Admin, HR",
+      "recipients": "Operations Staffs",
+      "date": "16/11/2022",
+      "status": "Sent",
+      "viewCount": 7,
+      "action": "View more"
+    },
+    {
+      "id": "13",
+      "title": "HR Circular for Operations Department Staff",
+      "sender": "Admin, HR",
+      "recipients": "Operations Staffs",
+      "date": "16/11/2022",
+      "status": "Sent",
+      "viewCount": 7,
+      "action": "View more"
     }
   ],
   "staff": [
