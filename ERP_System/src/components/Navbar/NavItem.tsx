@@ -1,9 +1,15 @@
-// NavItem.js
-
 import { NavLink } from "react-router-dom";
-import ListItem from "../Navbar/style"; // Импортируйте стили
+import { ListItem } from "./style";
 
-const NavItem = ({ to, label, icon }) => (
+interface NavItemProps {
+  to: string;
+  label: string;
+  icon: string;
+}
+
+
+
+const NavItem: React.FC<NavItemProps> = ({ to, label, icon }) => (
   <NavLink to={to}>
     <ListItem>
       <img src={icon} alt={label} className="w-6" />
@@ -11,5 +17,8 @@ const NavItem = ({ to, label, icon }) => (
     </ListItem>
   </NavLink>
 );
+
+
+
 
 export default NavItem;

@@ -1,5 +1,4 @@
-// NavItemStyles.js
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const ListItem = styled.li`
   display: flex;
@@ -15,7 +14,7 @@ const ListItem = styled.li`
 
   &:hover .text {
     background: linear-gradient(to right, #1e3a8a, #ec4899);
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
   }
 `;
