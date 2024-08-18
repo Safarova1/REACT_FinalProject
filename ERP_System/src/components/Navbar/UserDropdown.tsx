@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from "../Navbar/images_icons/shape.png";
+import shape from "../Navbar/images_icons/shape.png";
 
 
 const UserDropdown: React.FC = () => {
@@ -12,7 +12,7 @@ const UserDropdown: React.FC = () => {
   return (
     <div className="relative">
       {/* Иконка для открытия меню */}
-      <img src={shape} alt="minimenu"  />
+      <img src={shape} alt="shape"  />
       <button onClick={toggleMenu} className="p-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
