@@ -3,7 +3,6 @@ import Sidebar from "../../components/Navbar/Sidebar";
 import MainDasboard from "./MainDasboard";
 
 const Dashboard = () => {
-
   return (
     <>
       <div className="flex items-center justify-center max-w-[1440px] mx-auto ">

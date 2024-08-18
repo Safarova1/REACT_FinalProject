@@ -34,14 +34,17 @@ const Sidebar = () => {
           <NavItem to="/procurement" label="Procurement" icon={Procurement} />
           <NavItem to="/payroll" label="Payroll" icon={Payroll} />
           <NavItem to="/payment" label="Payment" icon={Payment} />
-          <NavItem to="/notifications" label="Notifications" icon={Notifications} />
+          <NavItem
+            to="/notifications"
+            label="Notifications"
+            icon={Notifications}
+          />
           <NavItem to="/memo" label="Memo" icon={Memo} />
           <NavItem to="/maintenance" label="Maintenance" icon={Maintenance} />
           <NavItem to="/logistics" label="Logistics" icon={Logistics} />
           <NavItem to="/capacity" label="Capacity" icon={Capacity} />
           <NavItem to="/budget" label="Budget" icon={Budget} />
           <NavItem to="/circular" label="Circulars" icon={Circulars} />
-
 
           {/* 
           <NavLink
