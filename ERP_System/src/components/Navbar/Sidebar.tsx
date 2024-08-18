@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 import logo from "../Navbar/images_icons/Logo.png";
 
@@ -30,86 +30,31 @@ const Sidebar = () => {
         <ul className="flex flex-col space-y-2 mt-10 gap-0.5	">
           <NavItem to="/dashboard" label="Dashboard" icon={Dashboard} />
           <NavItem to="/staff" label="Staff" icon={Staff} />
+          <NavItem to="/stock" label="Stock" icon={Stock} />
+          <NavItem to="/procurement" label="Procurement" icon={Procurement} />
+          <NavItem to="/payroll" label="Payroll" icon={Payroll} />
+          <NavItem to="/payment" label="Payment" icon={Payment} />
+          <NavItem to="/notifications" label="Notifications" icon={Notifications} />
+          <NavItem to="/memo" label="Memo" icon={Memo} />
+          <NavItem to="/maintenance" label="Maintenance" icon={Maintenance} />
+          <NavItem to="/logistics" label="Logistics" icon={Logistics} />
+          <NavItem to="/capacity" label="Capacity" icon={Capacity} />
+          <NavItem to="/budget" label="Budget" icon={Budget} />
+          <NavItem to="/circulars" label="Circulars" icon={Circulars} />
 
-          {/* <NavLink to="/dashboard">
-            <li className="flex flex-row gap-1 py-3.5 pl-5 ml-2.5 bg-white hover:bg-red-500 transition-all duration-300">
-              <img src={Dashboard} alt="Dashboard" className="w-6" />
-              <span className="text-black bg-clip-text transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-600 hover:to-pink-500 hover:text-transparent">
-                Dashboard
-              </span>
-            </li>
-          </NavLink>
 
-          <NavLink to="/staff">
-            <li className="flex flex-row gap-1 py-3.5 pl-5 ml-2.5 bg-white hover:bg-red-500 transition-all duration-300">
-              <img src={Staff} alt="Staff" className="w-6" />
-              <span className="text-black bg-clip-text transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-600 hover:to-pink-500 hover:text-transparent">
-                Staff
-              </span>
-            </li>
-          </NavLink> */}
-
-          {/* <NavLink to="/dashboard">
-            <li className="flex flex-row gap-1 py-3.5 pl-5 ml-2.5 bg-white hover:bg-red-500 text-black transition-all duration-300">
-              <img src={Dashboard} alt="Dashboard" className="w-6" />
-              <span className="bg-none hover:bg-gradient-to-r hover:from-blue-600 hover:to-pink-500 hover:bg-clip-text hover:text-transparent transition-all duration-300">
-                Dashboard
-              </span>
-            </li>
-          </NavLink>
-
-          <NavLink to="/staff">
-            <li className="flex flex-row gap-1 py-3.5 pl-5 ml-2.5 bg-white hover:bg-red-500 text-black transition-all duration-300">
-              <img src={Staff} alt="Staff" className="w-6" />
-              <span className="bg-none hover:bg-gradient-to-r hover:from-blue-600 hover:to-pink-500 hover:bg-clip-text hover:text-transparent transition-all duration-300">
-                Staff
-              </span>
-            </li>
-          </NavLink> */}
-
-          {/* <NavLink to="/dashboard">
-            <li className="relative flex flex-row gap-1 py-3.5 pl-5 ml-2.5 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 hover:text-black">
-              <span className="absolute inset-0 bg-gray-300 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
-              <img
-                src={Dashboard}
-                alt="Dashboard"
-                className="w-6 relative z-10"
-              />
-              <span className="relative z-10">Dashboard</span>
-            </li>
-          </NavLink>
-
-          <NavLink to="/staff">
-            <li className="relative flex flex-row gap-1 py-3.5 pl-5 ml-2.5 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 hover:text-black">
-              <span className="absolute inset-0 bg-gray-300 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
-              <img src={Staff} alt="Staff" className="w-6 relative z-10" />
-              <span className="relative z-10">Staff</span>
-            </li>
-          </NavLink> */}
-
-          {/* <NavLink
-            to="/dashboard"
+          {/* 
+          <NavLink
+            to="/staff"
             className={({ isActive }) =>
-              isActive ? " hover:bg-[#F2F7FF] " : "bg-[#ffffff]  "
+              isActive ? "hover:bg-[#F2F7FF]" : "bg-[#ffffff]"
             }
           >
-            <li className="flex flex-row gap-1 py-3.5 pl-5 ml-2.5  bg-[#000] hover:bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">
-              <img src={Dashboard} alt="Dashboard" className="w-6" />
-              Dashboard
+            <li className="flex flex-row gap-1 py-3.5 pl-5 ml-2.5 bg-[#000] hover:bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">
+              <img src={Staff} alt="Staff" className="w-6" />
+              Staff
             </li>
-          </NavLink>
-
-          <NavLink
-  to="/staff"
-  className={({ isActive }) =>
-    isActive ? "hover:bg-[#F2F7FF]" : "bg-[#ffffff]"
-  }
->
-  <li className="flex flex-row gap-1 py-3.5 pl-5 ml-2.5 bg-[#000] hover:bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">
-    <img src={Staff} alt="Staff" className="w-6" />
-    Staff
-  </li>
-</NavLink> */}
+          </NavLink> 
 
           <NavLink
             to="/payment-voucher"
@@ -219,7 +164,7 @@ const Sidebar = () => {
               <img src={Procurement} alt="Procurement" className="w-6" />
               Procurements
             </li>
-          </NavLink>
+          </NavLink> */}
         </ul>
       </nav>
       <Outlet />
