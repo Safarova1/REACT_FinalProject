@@ -5,6 +5,9 @@ import { useStaffContext } from "./StaffContext";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Navbar/Sidebar";
 
+import staffImg from "../../assets/icons/Staff.png"
+
+
 const AddStaffList = () => {
   const navigate = useNavigate();
   const { addStaff } = useStaffContext();
@@ -66,7 +69,8 @@ const AddStaffList = () => {
           <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
             {/* Навбар */}
             <div className="flex justify-between items-center  py-[26px] px-4  ">
-              <Navbar />
+              <Navbar image={staffImg} username="All Staff" date="View, search for and add new staff" />
+
             </div>
 
             {/* Основной контент */}

@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Navbar/Sidebar";
 import MainDasboard from "./MainDasboard";
+import dashboard from "../../assets/icons/Dashboard.png";
 
 const Dashboard = () => {
   return (
@@ -16,7 +17,7 @@ const Dashboard = () => {
           <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
             {/* Навбар */}
             <div className="flex justify-between items-center  py-[26px] px-4  ">
-              <Navbar />
+              <Navbar image={dashboard} username="Welcome, Mr. Otor John" date="Today is Saturday, 11th November 2022." />
             </div>
 
             {/* Основной контент */}

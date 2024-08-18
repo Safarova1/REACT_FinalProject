@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Navbar/Sidebar";
 import MainOfficeBudget from "./layout/MainOfficeBudget";
+import budget from "../../assets/icons/Budget.png"
 
 const OfficeBudget = () => {
   return (
@@ -16,7 +17,7 @@ const OfficeBudget = () => {
           <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
             {/* Навбар */}
             <div className="flex justify-between items-center  py-[26px] px-4  ">
-              <Navbar />
+              <Navbar image={budget} username="Office Budget" date="View, create and send budget request." />
             </div>
 
             {/* Основной контент */}

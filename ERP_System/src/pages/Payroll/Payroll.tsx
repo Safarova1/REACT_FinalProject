@@ -5,6 +5,7 @@ import InfoCards from "./InfoCards";
 
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Navbar/Sidebar";
+import payroll from "../../assets/icons/Payroll.png";
 
 const Payroll = () => {
   return (
@@ -20,7 +21,7 @@ const Payroll = () => {
           <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
             {/* Навбар */}
             <div className="flex justify-between items-center  py-[26px] px-4  ">
-              <Navbar />
+              <Navbar image={payroll} username="Payroll" date="Generate and send payroll to account." />
             </div>
 
             {/* Основной контент */}

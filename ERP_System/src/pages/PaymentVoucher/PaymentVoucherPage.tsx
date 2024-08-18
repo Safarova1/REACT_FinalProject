@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Navbar/Sidebar";
 
+import staffImg from "../../assets/icons/Staff.png";
+
+
 interface PaymentVoucherData {
   id: number;
   class: string;
@@ -140,7 +143,8 @@ const PaymentVoucherPage = () => {
           <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
             {/* Навбар */}
             <div className="flex justify-between items-center  py-[26px] px-4  ">
-              <Navbar />
+              <Navbar image={staffImg} username="Payment Voucher" date="Create payment voucher" />
+
             </div>
 
             {/* Основной контент */}

@@ -3,6 +3,7 @@ import { Link, Outlet, useNavigate, useLocation } from "react-router-dom";
 import { useStaffContext } from "./StaffContext";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Navbar/Sidebar";
+import staffImg from "../../assets/icons/Staff.png"
 
 interface Staff {
   id: number;
@@ -98,7 +99,8 @@ const StaffList = () => {
           <div className="flex-1 bg-[#F8F9FD] flex flex-col">
             {/* Навбар */}
             <div className="flex justify-between items-center py-[26px] px-4">
-              <Navbar />
+              <Navbar image={staffImg} username="All Staff" date="View, search for and add new staff" />
+
             </div>
 
             {/* Основной контент */}
@@ -198,8 +200,8 @@ const StaffList = () => {
                           <button
                             key={number}
                             className={`p-2 border rounded-md ${currentPage === number
-                                ? "bg-blue-600 text-white"
-                                : "border-gray-300"
+                              ? "bg-blue-600 text-white"
+                              : "border-gray-300"
                               }`}
                             onClick={() => handlePageChange(number)}
                           >
