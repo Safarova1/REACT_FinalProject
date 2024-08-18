@@ -1,8 +1,13 @@
+
 import React from "react";
+
+import React, { StrictMode } from "react";
+
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
+
 import { StaffProvider } from "./pages/Staff/StaffContext.tsx";
 import { Provider } from "react-redux";
 import store from "./redux/store.ts";
@@ -17,4 +22,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       </StaffProvider>
     </React.StrictMode>
   </BrowserRouter>
+
+import { Provider } from "react-redux";
+import store from "./components/store/store.ts";
+
+
 );
