@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 
 const Dashboard = lazy(() => import("./pages/Dashboard/Dashboard"));
-const Staff = lazy(() => import("./pages/Staff/Staff"));
+
 const PaymentVoucher = lazy(
   () => import("./pages/PaymentVoucher/PaymentVoucher")
 );
@@ -34,10 +34,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/staff" element={<StaffList />}>
-              <Route path="add-staff" element={<AddStaffList />} />
-              <Route path="edit-staff/:id" element={<EditStaffList />} />
-            </Route>
+            <Route path="/staff" element={<StaffList />} />
+
+            <Route path="/staff/add-staff" element={<AddStaffList />} />
+            <Route path="/staff/edit-staff/:id" element={<EditStaffList />} />
+
             <Route path="/payment-voucher" element={<PaymentVoucher />} />
             <Route path="/payroll" element={<Payroll />} />
             <Route path="/office-budget" element={<OfficeBudget />} />
