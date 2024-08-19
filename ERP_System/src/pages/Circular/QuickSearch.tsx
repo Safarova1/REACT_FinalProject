@@ -17,7 +17,7 @@ const QuickSearch: React.FC<QuickSearchProps> = ({ onDataUpdate }) => {
     const [searchTerm, setSearchTerm] = useState<string>('');
     const [filter, setFilter] = useState<string>('all');
 
-    const navigate = useNavigate(); // Вызываем useNavigate в начале компонента
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (status === 'idle') {
@@ -44,7 +44,7 @@ const QuickSearch: React.FC<QuickSearchProps> = ({ onDataUpdate }) => {
     };
 
     const handleCreateCircularClick = () => {
-        navigate('/create-circular'); // Используем navigate для перехода
+        navigate('/create-circular');
     };
 
     const filteredCirculars = circulars
@@ -87,7 +87,7 @@ const QuickSearch: React.FC<QuickSearchProps> = ({ onDataUpdate }) => {
                 type="button"
                 className="p-2.5 rounded-[10px] w-[180px] bg-blue-500 text-white hover:bg-blue-600"
                 label="Create Circular"
-                onClick={handleCreateCircularClick} // Передаем функцию обработчика
+                onClick={handleCreateCircularClick}
             />
         </div >
     );

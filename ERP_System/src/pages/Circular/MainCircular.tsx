@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Navbar/Sidebar";
 import circularsImg from "../../assets/icons/Dashboard.png";
