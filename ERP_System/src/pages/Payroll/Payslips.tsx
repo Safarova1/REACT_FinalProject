@@ -29,7 +29,7 @@ const Payslips = () => {
           {/* Правая панель */}
           <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
             {/* Навбар */}
-            <div className="flex justify-between items-center  py-[26px] px-4  ">
+            <div className="flex-1 justify-between items-center  py-[26px] px-4  ">
               <Navbar image={payroll} username="Payroll" date="Generate and send payroll to account." />
             </div>
 

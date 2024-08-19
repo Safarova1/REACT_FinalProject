@@ -142,7 +142,7 @@ const PaymentVoucherPage = () => {
           {/* Правая панель */}
           <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
             {/* Навбар */}
-            <div className="flex justify-between items-center  py-[26px] px-4  ">
+            <div className="flex-1 justify-between items-center  py-[26px] px-4  ">
               <Navbar image={staffImg} username="Payment Voucher" date="Create payment voucher" />
             </div>
 

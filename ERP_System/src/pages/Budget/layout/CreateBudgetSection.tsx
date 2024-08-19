@@ -53,7 +53,7 @@ const CreateBudgetSection = () => {
           {/* Правая панель */}
           <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
             {/* Навбар */}
-            <div className="flex justify-between items-center  py-[26px] px-4  ">
+            <div className="flex-1 justify-between items-center  py-[26px] px-4  ">
               <Navbar image={budget} username="Office Budget" date="View, create and send budget request." />
             </div>
 
