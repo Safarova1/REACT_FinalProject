@@ -1,6 +1,8 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Navbar/Sidebar";
 import circularsImg from "../../assets/icons/Dashboard.png";
+import QuickSearch from "./QuickSearch";
+import CircularList from "./CircularList";
 
 const Dashboard = () => {
   return (
@@ -21,8 +23,9 @@ const Dashboard = () => {
 
             {/* Основной контент */}
             <div className="flex-1 p-8 items-center justify-center py-[26px] px-4 relative ">
-              <div className="w-[1112px]  mx-auto mt-8 ">
-                {/* <MainDasboard /> */}
+              <div className="w-[1112px]  mx-auto mt-8 container">
+                <QuickSearch />
+                <CircularList />
               </div>
 
               <div className="text-[#383838] absolute bottom-3 left-[30%]">
