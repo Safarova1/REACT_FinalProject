@@ -2,7 +2,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Navbar/Sidebar";
 import circularsImg from "../../assets/icons/Dashboard.png";
 
-const Dashboard = () => {
+const CreateCircular = () => {
   return (
     <>
       <div className="flex items-center justify-center max-w-[1440px] mx-auto ">
@@ -36,4 +36,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default CreateCircular;

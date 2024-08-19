@@ -9,7 +9,7 @@ const PaymentVoucherPage = lazy(
 );
 
 const OfficeBudget = lazy(() => import("./pages/Budget/OfficeBudget"));
-const Circular = lazy(() => import("./pages/Circular/Circular"));
+const MainCircular = lazy(() => import("./pages/Circular/MainCircular"));
 
 
 
@@ -80,7 +80,7 @@ function App() {
 
             <Route path="/budget" element={<OfficeBudget />} />
             <Route path="/createBudget" element={<CreateBudgetSection />} />
-            <Route path="/circular" element={<Circular />} />
+            <Route path="/circular" element={<MainCircular />} />
             <Route path="*" element={<NotFound />} />
 
             {/* <Route path="/memo" element={<Memo />} /> */}
