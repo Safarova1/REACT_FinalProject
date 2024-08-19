@@ -91,7 +91,7 @@ const EditStaffList = () => {
           {/* Правая панель */}
           <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
             {/* Навбар */}
-            <div className="flex-1 justify-between items-center  py-[26px] px-4  ">
+            <div className="flex justify-between items-center py-[26px] px-4">
               <Navbar image={staffImg} username="All Staff" date="View, search for and add new staff" />
             </div>
 
