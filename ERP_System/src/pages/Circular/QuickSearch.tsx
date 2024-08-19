@@ -4,6 +4,7 @@ import { RootState, AppDispatch } from '../../redux/store';
 import { fetchCirculars } from '../../redux/slices/circularsSlice';
 import { Circular } from '../../redux/slices/circularsSlice';
 import CommonButton from '../../components/Button/Button';
+import { useNavigate } from 'react-router-dom';
 
 interface QuickSearchProps {
     onDataUpdate: (circulars: Circular[], status: 'idle' | 'loading' | 'succeeded' | 'failed', error: string | null) => void;
@@ -16,7 +17,7 @@ const QuickSearch: React.FC<QuickSearchProps> = ({ onDataUpdate }) => {
     const [searchTerm, setSearchTerm] = useState<string>('');
     const [filter, setFilter] = useState<string>('all');
 
-
+    const navigate = useNavigate(); // Вызываем useNavigate в начале компонента
 
     useEffect(() => {
         if (status === 'idle') {
@@ -42,16 +43,18 @@ const QuickSearch: React.FC<QuickSearchProps> = ({ onDataUpdate }) => {
         setFilter(event.target.value);
     };
 
+    const handleCreateCircularClick = () => {
+        navigate('/create-circular'); // Используем navigate для перехода
+    };
+
     const filteredCirculars = circulars
         .filter(circular => circular.title.toLowerCase().includes(searchTerm.toLowerCase()))
         .filter(circular => filter === 'all' || circular.status === filter);
 
-
     const totalCirculars = filteredCirculars.length;
 
-
     return (
-        <div className="bg-white p-4 rounded-lg flex flex-row  justify-between items-center gap-4 w-[1112px] mx-auto">
+        <div className="bg-white p-4 rounded-lg flex flex-row justify-between items-center gap-4 w-[1112px] mx-auto">
             <div className="flex flex-col max-w-[350px]">
                 <h2 className="text-[14px] font-semibold">Quick search a circular</h2>
                 <input
@@ -81,11 +84,11 @@ const QuickSearch: React.FC<QuickSearchProps> = ({ onDataUpdate }) => {
             </div>
 
             <CommonButton
-                type="submit"
+                type="button"
                 className="p-2.5 rounded-[10px] w-[180px] bg-blue-500 text-white hover:bg-blue-600"
                 label="Create Circular"
+                onClick={handleCreateCircularClick} // Передаем функцию обработчика
             />
-
         </div >
     );
 };
