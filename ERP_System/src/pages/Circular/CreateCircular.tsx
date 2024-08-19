@@ -6,8 +6,9 @@ import { useNavigate } from "react-router-dom";
 
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Navbar/Sidebar";
+import circularsImg from "../../assets/icons/Dashboard.png";
 
-import dashboard from "../../assets/icons/Dashboard.png";
+// import dashboard from "../../assets/icons/Dashboard.png";
 import CommonButton from "../../components/Button/Button";
 
 const CreateCircular = () => {
@@ -65,8 +66,7 @@ const CreateCircular = () => {
           <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
             {/* Навбар */}
             <div className="flex justify-between items-center  py-[26px] px-4  ">
-              <Navbar image={dashboard} username="Welcome, Mr. Otor John" date="Today is Saturday, 11th November 2022." />
-            </div>
+              <Navbar image={circularsImg} username="Circulars" date="Search for and view all circulars" />            </div>
 
             {/* Основной контент */}
             <div className="flex-1 p-8 items-center justify-center py-[26px] px-4 relative ">
@@ -90,7 +90,7 @@ const CreateCircular = () => {
                       value={formData.title}
                       onChange={handleInputChange}
                       required
-                      className="border p-2 rounded w-full border-slate-400"
+                      className="border rounded-xl p-2 rounded w-full border-slate-400"
                     />
                   </div>
 
@@ -104,7 +104,7 @@ const CreateCircular = () => {
                       value={formData.sender}
                       onChange={handleInputChange}
                       required
-                      className="border p-2 rounded w-full border-slate-400"
+                      className="border rounded-xl p-2 rounded w-full border-slate-400"
                     />
                   </div>
 
@@ -115,7 +115,7 @@ const CreateCircular = () => {
                       name="recipients"
                       value={formData.recipients}
                       onChange={handleRecipientChange}
-                      className="border p-2 rounded w-full border-slate-400"
+                      className="border rounded-xl p-2 rounded w-full border-slate-400"
                     >
                       <option value="Select">Select option</option>
                       <option value="Received">Received</option>
@@ -133,7 +133,7 @@ const CreateCircular = () => {
                       value={formData.date}
                       onChange={handleInputChange}
                       required
-                      className="border p-2 rounded w-full border-slate-400"
+                      className="border rounded-xl p-2 rounded w-full border-slate-400"
                     />
                   </div>
 
@@ -146,7 +146,7 @@ const CreateCircular = () => {
                       value={formData.action}
                       onChange={handleInputChange}
                       required
-                      className="border p-2 rounded w-full border-slate-400 resize-none h-40"
+                      className="border rounded-xl p-2 rounded w-full border-slate-400 resize-none h-40"
                     />
                   </div>
 
