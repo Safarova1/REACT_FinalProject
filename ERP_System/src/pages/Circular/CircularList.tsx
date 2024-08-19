@@ -1,26 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState, AppDispatch } from '../../redux/store';
-import { fetchCirculars } from '../../redux/slices/circularsSlice';
-
-const CircularList: React.FC = () => {
-    const dispatch: AppDispatch = useDispatch();
-    const { circulars, status, error } = useSelector((state: RootState) => state.circulars);
+import React, { useState } from 'react';
+import { CircularListProps } from '../../redux/slices/circularsSlice';
 
 
+
+const CircularList: React.FC<CircularListProps> = ({ circulars, status, error }) => {
     const [itemsPerPage, setItemsPerPage] = useState<number>(5);
     const [currentPage, setCurrentPage] = useState<number>(1);
-
-    useEffect(() => {
-        if (status === 'idle') {
-            dispatch(fetchCirculars());
-        }
-    }, [status, dispatch]);
-
-    const handleItemsPerPageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        setItemsPerPage(Number(e.target.value));
-        setCurrentPage(1);
-    };
 
     const totalPages = Math.ceil(circulars.length / itemsPerPage);
     const paginatedCirculars = circulars.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
@@ -47,7 +32,6 @@ const CircularList: React.FC = () => {
                             <th className="px-6 py-3 text-left text-[12px] font-extrabold">Sent To</th>
                             <th className="px-6 py-3 text-left text-[12px] font-extrabold">Date</th>
                             <th className="px-6 py-3 text-left text-[12px] font-extrabold">Circular Type</th>
-                            <th className="px-6 py-3 text-left text-[12px] font-extrabold">Action</th>
                         </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
@@ -59,31 +43,28 @@ const CircularList: React.FC = () => {
                                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{circular.recipients}</td>
                                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{circular.date}</td>
                                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{circular.status}</td>
-                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{circular.action}</td>
                             </tr>
                         ))}
                     </tbody>
                 </table>
                 <div className="mt-4 flex items-center justify-between">
                     <div className="flex items-center space-x-2">
-
                         {[...Array(totalPages)].map((_, index) => (
                             <button
                                 key={index}
-                                className={`px-4 py-2 rounded-md ${index + 1 === currentPage ? 'border-2  border-indigo-500/75 bg-indigo-500/75 text-white' : ' border-2  border-indigo-500/75'}`}
+                                className={`px-4 py-2 rounded-md ${index + 1 === currentPage ? 'border-2 border-indigo-500/75 bg-custom-btn-gradient text-white' : 'border-2 border-indigo-500/75'}`}
                                 onClick={() => goToPage(index + 1)}
                             >
                                 {index + 1}
                             </button>
                         ))}
                         <button
-                            className="px-4 py-2 border-2  border-indigo-500/75  rounded-md"
+                            className="px-4 py-2 border-2 border-indigo-500/75 rounded-md"
                             onClick={() => goToPage(currentPage + 1)}
                             disabled={currentPage === totalPages}
                         >
                             &gt;
                         </button>
-
                     </div>
                     <span>Page {currentPage} of {totalPages}</span>
                 </div>
@@ -102,7 +83,7 @@ const CircularList: React.FC = () => {
                     <select
                         className="p-2 border border-gray-300 rounded-md"
                         value={itemsPerPage}
-                        onChange={handleItemsPerPageChange}
+                        onChange={e => setItemsPerPage(Number(e.target.value))}
                     >
                         <option value={6}>6 per page</option>
                         <option value={10}>10 per page</option>
