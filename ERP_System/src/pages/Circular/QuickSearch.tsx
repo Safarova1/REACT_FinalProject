@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 
 import CommonButton from '../../components/Button/Button';
-import CircularList from './CircularList';
 
 
 const QuickSearch: React.FC = () => {
