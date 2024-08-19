@@ -829,6 +829,17 @@
       "ActualAmount": "1,380,000.00",
       "Variance": "20,000.00",
       "Date": "18/11/2023"
+    },
+    {
+      "id": 1724048536780,
+      "BudgetNo": "",
+      "BudgetDescription": "",
+      "BudgetedAmount": "",
+      "ActualAmount": "",
+      "Variance": "",
+      "Date": "",
+      "isLoading": false,
+      "error": null
     }
   ],
   "tax": [

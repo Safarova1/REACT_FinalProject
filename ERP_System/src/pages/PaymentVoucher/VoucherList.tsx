@@ -49,7 +49,7 @@ export const VoucherList = () => {
           {/* Main content */}
           <div className="flex-1 p-8 items-center justify-center py-[26px] px-4">
             <div className="container mx-auto p-6 bg-white rounded-lg shadow-lg mt-8">
-              <div className="container mx-auto p-6 shadow-lg mt-6 flex px-5 py-5 border-b bg-white-900 items-center justify-between rounded-lg bg-white">
+              <div className="container flex flex-row mx-auto p-6 shadow-lg mt-6 flex px-5 py-5 border-b bg-white-900 items-center justify-between rounded-lg bg-white">
                 <div>
                   <p className="text-3xl font-bold">{totalVouchers}</p>
                   <h2 className="text-1xl text-gray-500 font-semibold mb-2">
@@ -77,7 +77,7 @@ export const VoucherList = () => {
                 </div>
               </div>
 
-              <div className="container mx-auto p-6 shadow-lg bg-white flex justify-between items-center mt-6 pb-5">
+              <div className="container flex flex-row mx-auto p-6 shadow-lg bg-white flex justify-between items-center mt-6 pb-5">
                 <h3 className="text-xl font-bold">All Payment Vouchers</h3>
                 <p>
                   Showing
