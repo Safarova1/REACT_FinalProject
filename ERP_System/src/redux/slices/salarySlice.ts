@@ -54,7 +54,7 @@ export const updateSalary = createAsyncThunk(
     console.log("Salary data:", salary);
 
     const response = await axios.put(
-      `http://localhost:3000/salaries/${salary.id}`, 
+      `http://localhost:3000/salaries/${salary.id}`,
       salary
     );
     return response.data as Salary;

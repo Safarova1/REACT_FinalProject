@@ -11,7 +11,6 @@ import Sidebar from "../../components/Navbar/Sidebar";
 import payroll from "../../assets/icons/Payroll.png";
 
 const Tax = () => {
-
   const dispatch = useDispatch();
   const taxes = useSelector((state: RootState) => state.tax.taxes);
   const navigate = useNavigate();
@@ -33,7 +32,11 @@ const Tax = () => {
           <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
             {/* Навбар */}
             <div className="flex justify-between items-center  py-[26px] px-4  ">
-              <Navbar image={payroll} username="Payroll" date="Generate and send payroll to account." />
+              <Navbar
+                image={payroll}
+                username="Payroll"
+                date="Generate and send payroll to account."
+              />
             </div>
 
             {/* Основной контент */}
@@ -103,20 +106,25 @@ const Tax = () => {
                       <div className="flex flex-shrink-0 w-[80px]">S/N</div>
                       <div className="flex flex-shrink-0 w-[150px]">Tax</div>
                       <div className="flex-grow text-center">Value</div>
-                      <div className="flex-shrink-0 w-[150px] text-right">Action</div>
+                      <div className="flex-shrink-0 w-[150px] text-right">
+                        Action
+                      </div>
                     </li>
                     {taxes.map((tax, index) => (
-                      <li key={index} className="flex py-2 px-4 border-b items-center">
-                        <div className="flex flex-shrink-0 w-[80px]">{index + 1}</div>
-                        <div className="flex flex-shrink-0 w-[150px]">{tax.type}</div>
-                        <div className="flex-grow text-center">{tax.value}%</div>
+                      <li
+                        key={index}
+                        className="flex py-2 px-4 border-b items-center"
+                      >
+                        <div className="flex flex-shrink-0 w-[80px]">
+                          {index + 1}
+                        </div>
+                        <div className="flex flex-shrink-0 w-[150px]">
+                          {tax.type}
+                        </div>
+                        <div className="flex-grow text-center">
+                          {tax.value}%
+                        </div>
                         <div className="flex-shrink-0 w-[150px] text-right">
-                          <button
-                            onClick={() => navigate(`/edit-tax/${tax.id}`)}
-                            className="text-blue-500 mr-2"
-                          >
-                            Edit
-                          </button>
                           <button
                             onClick={() => dispatch(deleteTax(tax.id) as any)}
                             className="text-red-500"
@@ -144,24 +152,3 @@ const Tax = () => {
 };
 
 export default Tax;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

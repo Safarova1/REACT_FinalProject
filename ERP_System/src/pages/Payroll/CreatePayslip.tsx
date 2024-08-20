@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addPayslip } from "../../redux/slices/payslipsSlice";
 import { useNavigate } from "react-router-dom";
+import Sidebar from "../../components/Navbar/Sidebar";
+import Navbar from "../../components/Navbar/Navbar";
+import staffImg from "../../assets/icons/Staff.png";
 
 const CreatePayslip = () => {
   const dispatch = useDispatch();
@@ -60,117 +63,135 @@ const CreatePayslip = () => {
 
   return (
     <div className="w-[1148px] mx-auto mt-20">
-      <button
-        onClick={() => navigate(-1)}
-        className="text-blue-500 hover:text-blue-700 mb-[30px]"
-      >
-        <span className="mr-1">&#8592;</span>Back
-      </button>
-      <h2 className="text-2xl font-bold mb-[60px]">Create Payslip</h2>
-      <form onSubmit={handleSubmit} className="flex flex-wrap gap-6 p-4">
-        <div className="flex flex-col w-[350px]">
-          <input
-            type="text"
-            name="staffName"
-            placeholder="Staff Name"
-            value={formData.staffName}
-            onChange={handleInputChange}
-            required
-            className="border p-2 rounded w-full border-slate-400"
-          />
+      <div className="flex">
+        <div className="w-[260px] ">
+          <Sidebar />
         </div>
 
-        <div className="flex flex-col w-[350px]">
-          <input
-            type="text"
-            name="title"
-            placeholder="Title"
-            value={formData.title}
-            onChange={handleInputChange}
-            required
-            className="border p-2 rounded w-full border-slate-400"
-          />
-        </div>
+        <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
+          <div className="flex justify-between items-center  py-[26px] px-4  ">
+            <Navbar
+              image={staffImg}
+              username="Payment Voucher"
+              date="Create payment voucher"
+            />
+          </div>
 
-        <div className="flex flex-col w-[350px]">
-          <input
-            type="text"
-            name="level"
-            placeholder="Level"
-            value={formData.level}
-            onChange={handleInputChange}
-            required
-            className="border p-2 rounded w-full border-slate-400"
-          />
-        </div>
+          <div className="flex justify-start">
+            <button
+              onClick={() => navigate(-1)}
+              className="text-blue-500 hover:text-blue-700 mb-[30px]"
+            >
+              <span className="mr-1">&#8592;</span>Back
+            </button>
+          </div>
+          <h2 className="text-2xl font-bold mb-[60px]">Create Payslip</h2>
+          <form onSubmit={handleSubmit} className="flex flex-wrap gap-6 p-4">
+            <div className="flex flex-col w-[350px]">
+              <input
+                type="text"
+                name="staffName"
+                placeholder="Staff Name"
+                value={formData.staffName}
+                onChange={handleInputChange}
+                required
+                className="border p-2 rounded w-full border-slate-400"
+              />
+            </div>
 
-        <div className="flex flex-col w-[350px]">
-          <input
-            type="number"
-            name="basicSalary"
-            placeholder="Basic Salary"
-            value={formData.basicSalary}
-            onChange={handleInputChange}
-            required
-            className="border p-2 rounded w-full border-slate-400"
-          />
-        </div>
+            <div className="flex flex-col w-[350px]">
+              <input
+                type="text"
+                name="title"
+                placeholder="Title"
+                value={formData.title}
+                onChange={handleInputChange}
+                required
+                className="border p-2 rounded w-full border-slate-400"
+              />
+            </div>
 
-        <div className="flex flex-col w-[350px]">
-          <input
-            type="number"
-            name="allowance"
-            placeholder="Allowance"
-            value={formData.allowance}
-            onChange={handleInputChange}
-            required
-            className="border p-2 rounded w-full border-slate-400"
-          />
-        </div>
+            <div className="flex flex-col w-[350px]">
+              <input
+                type="text"
+                name="level"
+                placeholder="Level"
+                value={formData.level}
+                onChange={handleInputChange}
+                required
+                className="border p-2 rounded w-full border-slate-400"
+              />
+            </div>
 
-        <div className="flex flex-col w-[350px]">
-          <input
-            type="number"
-            name="deductions"
-            placeholder="Deductions"
-            value={formData.deductions}
-            onChange={handleInputChange}
-            required
-            className="border p-2 rounded w-full border-slate-400"
-          />
-        </div>
+            <div className="flex flex-col w-[350px]">
+              <input
+                type="number"
+                name="basicSalary"
+                placeholder="Basic Salary"
+                value={formData.basicSalary}
+                onChange={handleInputChange}
+                required
+                className="border p-2 rounded w-full border-slate-400"
+              />
+            </div>
 
-        <div className="flex flex-col w-[350px]">
-          <input
-            type="number"
-            name="grossSalary"
-            placeholder="Gross Salary"
-            value={formData.grossSalary}
-            readOnly
-            className="border p-2 rounded w-full border-slate-400 bg-gray-100"
-          />
-        </div>
+            <div className="flex flex-col w-[350px]">
+              <input
+                type="number"
+                name="allowance"
+                placeholder="Allowance"
+                value={formData.allowance}
+                onChange={handleInputChange}
+                required
+                className="border p-2 rounded w-full border-slate-400"
+              />
+            </div>
 
-        <div className="flex flex-col w-[350px]">
-          <input
-            type="number"
-            name="netSalary"
-            placeholder="Net Salary"
-            value={formData.netSalary}
-            readOnly
-            className="border p-2 rounded w-full border-slate-400 bg-gray-100"
-          />
-        </div>
+            <div className="flex flex-col w-[350px]">
+              <input
+                type="number"
+                name="deductions"
+                placeholder="Deductions"
+                value={formData.deductions}
+                onChange={handleInputChange}
+                required
+                className="border p-2 rounded w-full border-slate-400"
+              />
+            </div>
 
-        <div className="flex flex-col w-[350px]">
-          <button
-            type="submit"
-            className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 w-full"
-          >
-            Create
-          </button>
+            <div className="flex flex-col w-[350px]">
+              <input
+                type="number"
+                name="grossSalary"
+                placeholder="Gross Salary"
+                value={formData.grossSalary}
+                readOnly
+                className="border p-2 rounded w-full border-slate-400 bg-gray-100"
+              />
+            </div>
+
+            <div className="flex flex-col w-[350px]">
+              <input
+                type="number"
+                name="netSalary"
+                placeholder="Net Salary"
+                value={formData.netSalary}
+                readOnly
+                className="border p-2 rounded w-full border-slate-400 bg-gray-100"
+              />
+            </div>
+
+            <div className="flex flex-col w-[350px]">
+              <button
+                type="submit"
+                className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 w-full"
+              >
+                Create
+              </button>
+            </div>
+          </form>
         </div>
-      </form>
+      </div>
     </div>
   );
 };

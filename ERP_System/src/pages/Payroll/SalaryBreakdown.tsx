@@ -10,7 +10,6 @@ import Sidebar from "../../components/Navbar/Sidebar";
 import payroll from "../../assets/icons/Payroll.png";
 
 const SalaryBreakdown = () => {
-
   const dispatch = useDispatch();
   const salaries = useSelector((state: RootState) => state.salary.salaries);
   const navigate = useNavigate();
@@ -19,10 +18,9 @@ const SalaryBreakdown = () => {
     dispatch(fetchSalaries() as any);
   }, [dispatch]);
 
-
   return (
     <>
-      <div className="flex items-center justify-center max-w-[1440px] mx-auto ">
+      <div className="flex items-center justify-center max-w-[1440px] mx-auto  ">
         <div className=" flex  ">
           {/* Левая панель */}
           <div className="w-[260px] ">
@@ -33,8 +31,11 @@ const SalaryBreakdown = () => {
           <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
             {/* Навбар */}
             <div className="flex justify-between items-center  py-[26px] px-4  ">
-
-              <Navbar image={payroll} username="Payroll" date="Generate and send payroll to account." />
+              <Navbar
+                image={payroll}
+                username="Payroll"
+                date="Generate and send payroll to account."
+              />
             </div>
 
             {/* Основной контент */}
@@ -136,8 +137,3 @@ const SalaryBreakdown = () => {
 };
 
 export default SalaryBreakdown;
-
-
-
-
-

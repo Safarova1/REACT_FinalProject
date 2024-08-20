@@ -131,7 +131,7 @@
       "action": "View more"
     },
     {
-      "id": 1724043109343,
+      "id": "1724043109343",
       "title": "HR Circular for Operations Department Staff",
       "sender": "Sama",
       "recipients": "Sent",
@@ -831,7 +831,7 @@
       "Date": "18/11/2023"
     },
     {
-      "id": 1724048536780,
+      "id": "1724048536780",
       "BudgetNo": "",
       "BudgetDescription": "",
       "BudgetedAmount": "",
@@ -849,19 +849,14 @@
       "value": 50
     },
     {
-      "id": "1723988299755",
+      "id": 1724170176176,
+      "type": "NHIS",
+      "value": 20
+    },
+    {
+      "id": 1724170185401,
       "type": "WHT",
       "value": 2.5
-    },
-    {
-      "id": "1723988322237",
-      "type": "NHIS",
-      "value": 13
-    },
-    {
-      "id": "1723988332318",
-      "type": "VAT",
-      "value": 7
     }
   ],
   "payslips": [
@@ -1095,48 +1090,60 @@
       "grossSalary": 917510,
       "deductions": 875,
       "netSalary": 916635
+    },
+    {
+      "id": 1724170057172,
+      "staffName": "Iman",
+      "title": "Dev",
+      "level": "Junior",
+      "basicSalary": 5000,
+      "allowance": 2000,
+      "grossSalary": 7000,
+      "deductions": 1000,
+      "netSalary": 6000
+    },
+    {
+      "id": 1724171057037,
+      "staffName": "Ashly",
+      "title": "HR",
+      "level": "Senior",
+      "basicSalary": 5000,
+      "allowance": 1000,
+      "grossSalary": 6000,
+      "deductions": 200,
+      "netSalary": 5800
     }
   ],
   "salaries": [
     {
-      "id": "1723991548572",
-      "title": "Manager",
-      "level": "GM",
+      "id": 1724167109033,
+      "title": "PHP Developer",
+      "level": "Middle",
       "basicSalary": 5000,
-      "allowance": 2000,
-      "deductions": 3000,
-      "grossSalary": 7000,
-      "netSalary": 4000
+      "allowance": 1000,
+      "deductions": 500,
+      "grossSalary": 6000,
+      "netSalary": 5500
     },
     {
-      "id": "1723992000951",
-      "title": "Product Manager",
-      "level": "DGM",
+      "id": 1724169192362,
+      "title": "Java Dev",
+      "level": "Senior",
       "basicSalary": 7000,
-      "allowance": 3000,
-      "deductions": 2000,
-      "grossSalary": 10000,
-      "netSalary": 8000
+      "allowance": 1000,
+      "deductions": 500,
+      "grossSalary": 8000,
+      "netSalary": 7500
     },
     {
-      "id": "1723993654635",
-      "title": "Eingineer",
-      "level": "LD",
-      "basicSalary": 5000,
-      "allowance": 2000,
-      "deductions": 100,
-      "grossSalary": 7000,
-      "netSalary": 6900
-    },
-    {
-      "id": "1724009105865",
-      "title": "scsc",
-      "level": "cdcdc",
-      "basicSalary": 4,
-      "allowance": 5,
-      "deductions": 4,
-      "grossSalary": 9,
-      "netSalary": 5
+      "id": 1724169230718,
+      "title": "Python dev",
+      "level": "Junior",
+      "basicSalary": 2000,
+      "allowance": 500,
+      "deductions": 250,
+      "grossSalary": 2500,
+      "netSalary": 2250
     }
   ]
 }
