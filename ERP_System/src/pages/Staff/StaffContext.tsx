@@ -51,13 +51,11 @@ export const StaffProvider: React.FC<{ children: ReactNode }> = ({
     );
   };
 
-  const updateStaff = (updatedStaff: Staff) => {
+  const updateStaff = (updatedStaff) => {
     setStaff((prevStaff) =>
-      prevStaff
-        ? prevStaff.map((staff) =>
-            staff.id === updatedStaff.id ? updatedStaff : staff
-          )
-        : [updatedStaff]
+      prevStaff.map((staff) =>
+        staff.id === updatedStaff.id ? updatedStaff : staff
+      )
     );
   };
 

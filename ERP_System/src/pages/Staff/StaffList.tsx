@@ -3,7 +3,7 @@ import { Link, Outlet, useNavigate, useLocation } from "react-router-dom";
 import { useStaffContext } from "./StaffContext";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Navbar/Sidebar";
-import staffImg from "../../assets/icons/Staff.png"
+import staffImg from "../../assets/icons/Staff.png";
 
 interface Staff {
   id: number;
@@ -31,19 +31,16 @@ const StaffList = () => {
   };
 
   useEffect(() => {
-    console.log("Staff data:", staff);
     if (Array.isArray(staff)) {
       setFilteredData(staff);
       setIsLoading(false);
     } else {
-      console.error("Staff is not an array");
       setFilteredData([]);
       setIsLoading(true);
     }
   }, [staff]);
 
   useEffect(() => {
-    console.log("Search term:", searchTerm);
     if (staff) {
       setFilteredData(
         staff.filter((staffMember) =>
@@ -65,7 +62,6 @@ const StaffList = () => {
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
   const handlePageChange = (page: number) => {
-    console.log("Changing page to:", page);
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
     }
@@ -90,20 +86,17 @@ const StaffList = () => {
     <>
       <div className="flex items-center justify-center max-w-[1440px] mx-auto">
         <div className="flex">
-          {/* Левая панель */}
           <div className="w-[260px]">
             <Sidebar />
           </div>
-
-          {/* Правая панель */}
           <div className="flex-1 bg-[#F8F9FD] flex flex-col">
-            {/* Навбар */}
             <div className="flex justify-between items-center py-[26px] px-4">
-              <Navbar image={staffImg} username="All Staff" date="View, search for and add new staff" />
-
+              <Navbar
+                image={staffImg}
+                username="All Staff"
+                date="View, search for and add new staff"
+              />
             </div>
-
-            {/* Основной контент */}
             <div className="flex-1 p-8 items-center justify-center py-[26px] px-4 relative">
               <div className="w-[1112px] mx-auto mt-8">
                 <div className="mx-auto container p-6 bg-white ">
@@ -199,34 +192,22 @@ const StaffList = () => {
                         {getPageNumbers().map((number) => (
                           <button
                             key={number}
-                            className={`p-2 border rounded-md ${currentPage === number
-                              ? "bg-blue-600 text-white"
-                              : "border-gray-300"
-                              }`}
+                            className={`p-2 border rounded-md ${
+                              currentPage === number
+                                ? "bg-blue-600 text-white"
+                                : "border-gray-300"
+                            }`}
                             onClick={() => handlePageChange(number)}
                           >
                             {number}
                           </button>
                         ))}
-                        {totalPages > 1 && (
-                          <button
-                            className="p-2 border border-gray-300 rounded-md"
-                            disabled={currentPage === totalPages}
-                            onClick={() => handlePageChange(totalPages)}
-                          >
-                            {">>"}
-                          </button>
-                        )}
                       </div>
                     </div>
                   )}
-                  <Outlet />
                 </div>
               </div>
-
-              <div className="text-[#383838] absolute bottom-3 left-[30%]">
-                Copyright © 2022 Relia Energy. All Rights Reserved
-              </div>
+              <Outlet />
             </div>
           </div>
         </div>

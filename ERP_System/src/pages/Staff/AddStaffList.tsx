@@ -5,8 +5,7 @@ import { useStaffContext } from "./StaffContext";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Navbar/Sidebar";
 
-import staffImg from "../../assets/icons/Staff.png"
-
+import staffImg from "../../assets/icons/Staff.png";
 
 const AddStaffList = () => {
   const navigate = useNavigate();
@@ -59,28 +58,35 @@ const AddStaffList = () => {
   return (
     <>
       <div className="flex items-center justify-center max-w-[1440px] mx-auto ">
-        <div className=" flex  ">
+        <div className="flex">
           {/* Левая панель */}
-          <div className="w-[260px] ">
+          <div className="w-[260px]">
             <Sidebar />
           </div>
 
           {/* Правая панель */}
-          <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
+          <div className="flex-1 bg-[#F8F9FD] flex flex-col">
             {/* Навбар */}
             <div className="flex justify-between items-center py-[26px] px-4">
-              <Navbar image={staffImg} username="All Staff" date="View, search for and add new staff" />
-
+              <Navbar
+                image={staffImg}
+                username="All Staff"
+                date="View, search for and add new staff"
+              />
             </div>
 
             {/* Основной контент */}
-            <div className="flex-1 p-8 items-center justify-center py-[26px] px-4 relative ">
-              <div className="w-[1112px]  mx-auto mt-8 ">
+            <div className="flex-1 p-8 items-center justify-center py-[26px] px-4 relative">
+              <div className="w-[1112px] mx-auto mt-8">
                 <div className="container mx-auto p-6 bg-white mt-20">
-                  <button onClick={handleBack} className="text-blue-500 mb-6">
-                    {"< Back"}
-                  </button>
-                  <div className="bg-white p-6 rounded-lg shadow-md">
+                  {/* Кнопка Back */}
+                  <div className="flex justify-start">
+                    <button onClick={handleBack} className="text-blue-500">
+                      {"< Back"}
+                    </button>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-lg shadow-md mt-4">
                     <h2 className="text-2xl font-semibold mb-6">
                       Add a New Staff
                     </h2>
@@ -100,6 +106,7 @@ const AddStaffList = () => {
                             2MB
                           </p>
                         </div>
+
                         <div className="col-span-2 grid grid-cols-2 gap-4">
                           <div className="flex flex-col">
                             <label
@@ -117,6 +124,7 @@ const AddStaffList = () => {
                               className="p-2 border border-gray-300 rounded-md"
                             />
                           </div>
+
                           <div className="flex flex-col">
                             <label
                               htmlFor="lastName"
@@ -133,6 +141,7 @@ const AddStaffList = () => {
                               className="p-2 border border-gray-300 rounded-md"
                             />
                           </div>
+
                           <div className="flex flex-col">
                             <label
                               htmlFor="email"
@@ -149,6 +158,7 @@ const AddStaffList = () => {
                               className="p-2 border border-gray-300 rounded-md"
                             />
                           </div>
+
                           <div className="flex flex-col">
                             <label
                               htmlFor="phoneNumber1"
@@ -165,6 +175,7 @@ const AddStaffList = () => {
                               className="p-2 border border-gray-300 rounded-md"
                             />
                           </div>
+
                           <div className="flex flex-col">
                             <label
                               htmlFor="gender"
@@ -183,6 +194,7 @@ const AddStaffList = () => {
                               <option value="Male">Male</option>
                             </select>
                           </div>
+
                           <div className="flex flex-col">
                             <label
                               htmlFor="phoneNumber2"
@@ -199,6 +211,7 @@ const AddStaffList = () => {
                               className="p-2 border border-gray-300 rounded-md"
                             />
                           </div>
+
                           <div className="flex flex-col">
                             <label
                               htmlFor="role"
@@ -219,6 +232,7 @@ const AddStaffList = () => {
                               <option value="P.M">P.M</option>
                             </select>
                           </div>
+
                           <div className="flex flex-col">
                             <label
                               htmlFor="designation"
@@ -244,6 +258,7 @@ const AddStaffList = () => {
                               <option value="Security">Security</option>
                             </select>
                           </div>
+
                           <div className="flex flex-col">
                             <label
                               htmlFor="staffId"
@@ -260,6 +275,7 @@ const AddStaffList = () => {
                               className="p-2 border border-gray-300 rounded-md text-black bg-gray-200"
                             />
                           </div>
+
                           <div className="flex flex-col">
                             <label
                               htmlFor="officialEmail"
@@ -278,6 +294,7 @@ const AddStaffList = () => {
                           </div>
                         </div>
                       </div>
+
                       <div className="mt-8 flex justify-end">
                         <button
                           type="submit"

@@ -6,7 +6,6 @@ import Sidebar from "../../components/Navbar/Sidebar";
 
 import staffImg from "../../assets/icons/Staff.png";
 
-
 interface PaymentVoucherData {
   id: number;
   class: string;
@@ -78,6 +77,9 @@ const PaymentVoucherPage = () => {
     setFilteredRows([...filteredRows, newRow]);
   };
 
+  const handleBack = () => {
+    navigate("/payment");
+  };
   const calculateTotal = (field: keyof PaymentVoucherData): string => {
     return filteredRows
       .reduce((total, row) => total + row[field], 0)
@@ -91,11 +93,22 @@ const PaymentVoucherPage = () => {
   const handleInputChange = (
     index: number,
     field: keyof PaymentVoucherData,
-    value: any
+    value: string
   ) => {
     const updatedRows = [...filteredRows];
-    updatedRows[index] = { ...updatedRows[index], [field]: value };
 
+    // Обработка только числовых значений
+    let numericValue: number | string = value;
+    if (field !== "class" && field !== "description") {
+      numericValue = parseFloat(value);
+      if (isNaN(numericValue)) {
+        numericValue = 0; // Или используйте другое значение по умолчанию
+      }
+    }
+
+    updatedRows[index] = { ...updatedRows[index], [field]: numericValue };
+
+    // Пересчёт значений
     updatedRows[index].amount =
       updatedRows[index].quantity * updatedRows[index].unitPrice;
     updatedRows[index].vatAmount =
@@ -130,6 +143,7 @@ const PaymentVoucherPage = () => {
       alert("Failed to save data.");
     }
   };
+
   return (
     <>
       <div className="flex items-center justify-center max-w-[1440px] mx-auto ">
@@ -143,13 +157,21 @@ const PaymentVoucherPage = () => {
           <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
             {/* Навбар */}
             <div className="flex justify-between items-center  py-[26px] px-4  ">
-              <Navbar image={staffImg} username="Payment Voucher" date="Create payment voucher" />
+              <Navbar
+                image={staffImg}
+                username="Payment Voucher"
+                date="Create payment voucher"
+              />
             </div>
 
             {/* Основной контент */}
             <div className="flex  items-center justify-center py-[26px] px-4 relative ">
-              <div className="w-[1112px]  mx-auto mt-8 mx-auto p-6 bg-white rounded-lg shadow-lg mt-8">
-
+              <div className="w-[1112px]  mx-auto mt-8  p-6 bg-white rounded-lg shadow-lg ">
+                <div className="flex justify-start">
+                  <button onClick={handleBack} className="text-blue-500 mb-6">
+                    {"< Back"}
+                  </button>
+                </div>
                 <h1 className="text-2xl font-bold mb-4">Payment Voucher</h1>
                 <div className="mb-4">
                   <label className="block text-gray-700 mb-3">Subject</label>
@@ -213,11 +235,7 @@ const PaymentVoucherPage = () => {
                             type="text"
                             value={voucher.class}
                             onChange={(e) =>
-                              handleInputChange(
-                                index,
-                                "class",
-                                e.target.value
-                              )
+                              handleInputChange(index, "class", e.target.value)
                             }
                             placeholder="Enter class"
                             className="w-full px-2 py-1 rounded-md border"
@@ -401,12 +419,7 @@ const PaymentVoucherPage = () => {
                 </button>
               </div>
             </div>
-
-            <div className="text-[#383838] absolute bottom-3 left-[30%]">
-              Copyright © 2022 Relia Energy. All Rights Reserved
-            </div>
           </div>
-
         </div>
       </div>
     </>

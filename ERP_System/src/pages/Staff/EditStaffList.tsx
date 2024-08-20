@@ -5,8 +5,7 @@ import { useStaffContext } from "./StaffContext";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Navbar/Sidebar";
 
-import staffImg from "../../assets/icons/Staff.png"
-
+import staffImg from "../../assets/icons/Staff.png";
 
 const EditStaffList = () => {
   const { id } = useParams<{ id: string }>();
@@ -29,6 +28,7 @@ const EditStaffList = () => {
   useEffect(() => {
     const staffMember = staff?.find((staff) => staff.id === parseInt(id || ""));
     if (staffMember) {
+      console.log("Staff member data:", staffMember);
       setFormData({
         firstName: staffMember.firstName || "",
         lastName: staffMember.lastName || "",
@@ -44,7 +44,6 @@ const EditStaffList = () => {
       });
     }
   }, [id, staff]);
-
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
@@ -64,13 +63,14 @@ const EditStaffList = () => {
     };
 
     if (setStaff) {
-      setStaff((prevStaff) =>
-        prevStaff
+      setStaff((prevStaff) => {
+        console.log("Updating staff list:", prevStaff); // Добавлено для отладки
+        return prevStaff
           ? prevStaff.map((staff) =>
-            staff.id === updatedStaff.id ? updatedStaff : staff
-          )
-          : [updatedStaff]
-      );
+              staff.id === updatedStaff.id ? updatedStaff : staff
+            )
+          : [updatedStaff];
+      });
     }
 
     navigate("/staff");
@@ -81,27 +81,33 @@ const EditStaffList = () => {
   };
   return (
     <>
-      <div className="flex items-center justify-center max-w-[1440px] mx-auto ">
-        <div className=" flex  ">
+      <div className="flex items-center justify-center max-w-[1440px] mx-auto">
+        <div className="flex">
           {/* Левая панель */}
-          <div className="w-[260px] ">
+          <div className="w-[260px]">
             <Sidebar />
           </div>
 
           {/* Правая панель */}
-          <div className="flex-1 bg-[#F8F9FD] flex flex-col  ">
+          <div className="flex-1 bg-[#F8F9FD] flex flex-col">
             {/* Навбар */}
             <div className="flex justify-between items-center py-[26px] px-4">
-              <Navbar image={staffImg} username="All Staff" date="View, search for and add new staff" />
+              <Navbar
+                image={staffImg}
+                username="All Staff"
+                date="View, search for and add new staff"
+              />
             </div>
 
             {/* Основной контент */}
-            <div className="flex-1 p-8 items-center justify-center py-[26px] px-4 relative ">
-              <div className="w-[1112px]  mx-auto mt-8 ">
+            <div className="flex-1 p-8 items-center justify-center py-[26px] px-4 relative">
+              <div className="w-[1112px] mx-auto mt-8">
                 <div className="container mx-auto p-6 bg-white mt-20">
-                  <button onClick={handleBack} className="text-blue-500 mb-6">
-                    {"< Back"}
-                  </button>
+                  <div className="flex justify-start">
+                    <button onClick={handleBack} className="text-blue-500 mb-6">
+                      {"< Back"}
+                    </button>
+                  </div>
                   <div className="bg-white p-6 rounded-lg shadow-md">
                     <h2 className="text-2xl font-semibold mb-6">
                       Edit Staff Profile
@@ -123,6 +129,7 @@ const EditStaffList = () => {
                           </p>
                         </div>
                         <div className="col-span-2 grid grid-cols-2 gap-4">
+                          {/* Поля формы */}
                           <div className="flex flex-col">
                             <label
                               htmlFor="firstName"
@@ -155,6 +162,7 @@ const EditStaffList = () => {
                               className="p-2 border border-gray-300 rounded-md"
                             />
                           </div>
+                          {/* Остальные поля */}
                           <div className="flex flex-col">
                             <label
                               htmlFor="email"
