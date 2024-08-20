@@ -46,18 +46,15 @@ export const login = createAsyncThunk(
 
 export const register = createAsyncThunk(
   "auth/register",
-  async (_, thunkApi) => {
+  async (
+    userData: { email: string; password: string; name: string; avatar: string },
+    thunkApi
+  ) => {
     try {
       const response = await axios.post(
         "https://api.escuelajs.co/api/v1/users/",
-        {
-          email: "john@mail.com",
-          password: "changeme",
-          name: "John Doe",
-          avatar: "https://example.com/default-avatar.png",
-        }
+        userData
       );
-
       return response.data;
     } catch (error) {
       if (axios.isAxiosError(error)) {
