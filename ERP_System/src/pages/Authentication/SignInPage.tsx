@@ -1,14 +1,16 @@
 import React, { useId } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { login } from "../../redux/slices/operation.ts";
-import { AppDispatch, RootStat } from "../../redux/store.ts";
+import { login } from "../../redux/slices/operation";
+import { AppDispatch, RootStat } from "../../redux/store";
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import imgLogo from "../../assets/images/logo-img.png";
 import imgDepos from "../../assets/images/auth-img.png";
-import { ISignIn } from "../../components/types/infoAuthTypes.ts";
+import { ISignIn } from "../../components/types/infoAuthTypes";
 import * as Yup from "yup";
-import CommonButton from "../../components/Button/Button.tsx";
+import CommonButton from "../../components/Button/Button";
 import { useNavigate } from "react-router";
+import Spinner from "../../components/Spinner/Spinner";
+import CustomErrorMessage from "../../components/Error/Error";
 
 const SignInScheme = Yup.object().shape({
   email: Yup.string().email("Must be a valid email").required("Required"),
@@ -36,15 +38,19 @@ const SignInPage: React.FC = () => {
       console.error("Ошибка авторизации:", error);
     }
   };
+
   const handleOpenSignUpPage = () => {
-    navigate("/signup", {
-      replace: true,
-    });
+    navigate("/signup", { replace: true });
   };
+
   return (
-    <section className="flex items-center justify-center h-[100vh]">
-      {isLoading && (
-        <h1 className="text-[50px] text-black] mr-[50px]">...Loading</h1>
+    <section className="flex items-center justify-center h-[100wh]">
+      {isLoading && <Spinner />}
+      {error && (
+        <CustomErrorMessage
+          name="Авторизация"
+          message="Неправильный логин или пароль"
+        />
       )}
       <Formik
         initialValues={initialValues}
@@ -136,9 +142,6 @@ const SignInPage: React.FC = () => {
           </div>
         </Form>
       </Formik>
-      {error && (
-        <h2 className="text-20px text-red-500">Error happened - {error}</h2>
-      )}
     </section>
   );
 };
